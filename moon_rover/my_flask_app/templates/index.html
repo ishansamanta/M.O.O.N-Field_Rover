@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M.O.O.N Rover Dashboard</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:"Segoe UI",Arial,sans-serif;background:#dce6eb;color:#19343f}
+body{padding:12px;background:linear-gradient(#f7fafc,#d8e2e7)}
+.dashboard{width:min(1500px,100%);margin:auto;padding:10px;border:2px solid #71858e;border-radius:5px;background:linear-gradient(#f8fbfd,#e5edf1);box-shadow:0 5px 22px rgba(40,60,70,.25)}
+.topbar{height:48px;display:flex;align-items:center;justify-content:space-between;padding:0 13px;margin-bottom:10px;border:1px solid #82959d;border-radius:4px;background:linear-gradient(#fff,#dbe5e9);box-shadow:inset 0 1px #fff}
+.brand{font-size:21px;font-weight:700;letter-spacing:1px}
+.status{font-size:12px;font-weight:700;display:flex;align-items:center;gap:7px}
+.dot{width:10px;height:10px;border-radius:50%;background:#32b64a;box-shadow:0 0 7px #32b64a}
+
+.camera-panel{border:2px solid #718892;border-radius:4px;overflow:hidden;background:#edf3f5;box-shadow:inset 0 1px #fff,0 2px 5px #9aabb2;margin-bottom:10px}
+.title{height:36px;display:flex;align-items:center;padding:0 11px;font-weight:700;font-size:14px;background:linear-gradient(#fff,#d7e3e8);border-bottom:1px solid #9aabb2}
+.camera{width:100%;aspect-ratio:16/7;min-height:320px;position:relative;background:#101b20;overflow:hidden}
+#camera{width:100%;height:100%;object-fit:cover;display:none}
+.placeholder{width:100%;height:100%;display:grid;place-items:center;color:#cbd9dd;font-size:20px;letter-spacing:1px;background:radial-gradient(circle,#344b54,#14252c)}
+.hud{position:absolute;inset:12px;border:1px solid rgba(255,255,255,.28);pointer-events:none}
+.caminfo{position:absolute;top:12px;left:15px;color:#fff;background:rgba(0,0,0,.45);padding:5px 8px;font-size:12px}
+.rec{position:absolute;right:15px;top:12px;color:#fff;background:rgba(0,0,0,.45);padding:5px 8px;font-size:12px}
+.rec i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#e33;margin-right:5px}
+
+.bottom-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;align-items:stretch}
+.panel{border:2px solid #718892;border-radius:4px;background:linear-gradient(#f9fcfd,#e4edf1);box-shadow:inset 0 1px #fff,0 2px 5px rgba(46,65,75,.14);overflow:hidden}
+.ai{grid-column:1}
+.control{grid-column:2}
+.sensors{grid-column:3}
+.content{padding:12px}
+
+.glossy{
+border:1px solid #2e7735;border-radius:6px;color:#fff;font-weight:700;font-family:"Segoe UI",Arial,sans-serif;text-shadow:0 -1px 1px rgba(0,0,0,.5);cursor:pointer;
+background:
+linear-gradient(to bottom,rgba(255,255,255,.92) 0%,rgba(255,255,255,.4) 13%,rgba(255,255,255,0) 31%),
+linear-gradient(#87da70,#43a747 48%,#23732c 52%,#49aa4e);
+box-shadow:inset 0 1px rgba(255,255,255,.95),inset 0 -1px rgba(0,0,0,.3),0 1px 2px rgba(0,0,0,.35);
+transition:.08s
+}
+.glossy:hover{filter:brightness(1.1)}
+.glossy:active,.glossy.active{transform:translateY(1px);background:linear-gradient(#3e9b43,#236c2a);box-shadow:inset 0 2px 5px rgba(0,0,0,.35)}
+.small{padding:7px 11px;font-size:11px}
+
+.control-content{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:5px 5px 4px !important;}
+.control-buttons{height:25px;min-height:25px;display:flex;align-items:center;justify-content:center;gap:5px;margin-bottom:2px;}
+.control-buttons .small{padding:3px 7px;font-size:8px;line-height:1;height:22px;}
+
+.control-content .joystick{
+    width:104px !important;height:104px !important;min-height:104px !important;margin:1px auto 3px !important;
+    position:relative;border-radius:50%;border:2px solid #70858d;
+    background:radial-gradient(circle at 50% 45%, #dbe5e8 0 18%, #b7c6ca 19% 55%, #8d9fa5 56% 100%);
+    box-shadow:inset 0 3px 8px rgba(0,0,0,.28),inset 0 -2px 4px rgba(255,255,255,.55),0 1px 3px rgba(0,0,0,.35);
+    touch-action:none;user-select:none;cursor:grab;
+}
+.control-content .joystick:active{cursor:grabbing;}
+.joy-arrow{position:absolute;color:#52666d;font-size:10px;line-height:1;pointer-events:none;text-shadow:0 1px #fff;}
+.joy-up{top:7px;left:47px;}.joy-down{bottom:7px;left:47px;}.joy-left{left:7px;top:47px;}.joy-right{right:7px;top:47px;}
+
+.joystick-knob{
+    position:absolute;left:50%;top:50%;width:39px;height:39px;border-radius:50%;display:grid;place-items:center;
+    transform:translate(-50%, -50%);color:#fff;font-size:12px;cursor:grab;
+    background:linear-gradient(to bottom,rgba(255,255,255,.9),rgba(255,255,255,.25) 30%,rgba(255,255,255,0) 45%),linear-gradient(#8bdc73, #43a84a 48%, #25772e 52%, #3f9e45);
+    border:1px solid #2c7133;box-shadow:inset 0 1px rgba(255,255,255,.95),inset 0 -2px 3px rgba(0,0,0,.3),0 2px 4px rgba(0,0,0,.4);
+    transition:box-shadow .08s;z-index:5;
+}
+
+.key-info{font-size:7px;line-height:1.1;color:#5b6e76;text-align:center;}
+.control-status{font-size:8px;margin-top:2px;color:#1c6030;font-weight:700;}
+
+.readings{padding:10px;display:grid;gap:7px}
+.reading{display:grid;grid-template-columns:1fr auto;padding:8px 9px;border:1px solid #a5b5bc;border-radius:3px;background:linear-gradient(#fff,#e9eff2);box-shadow:inset 0 1px #fff}
+.reading span{font-size:12px;color:#526872}.reading strong{font-size:14px;color:#1c4c38}
+.mode{margin:0 10px 10px;text-align:center;padding:7px;border:1px solid #a5b5bc;background:#f6f8f9;font-size:12px;font-weight:700}
+.npk-content{height:100%;display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;padding:8px!important}
+.npk-button{width:100%;height:31px;font-size:10px;flex:0 0 31px}
+.npk-status{text-align:center;font-size:9px;color:#526870;height:18px;padding-top:4px}
+.npk-readings{display:grid;gap:5px;margin-top:2px}
+.npk-reading{display:grid;grid-template-columns:1fr auto;align-items:center;padding:7px 8px;min-height:28px;border:1px solid #a5b5bc;border-radius:3px;background:linear-gradient(#fff,#e8eef1);box-shadow:inset 0 1px #fff}
+.npk-reading span{font-size:10px;color:#536971}.npk-reading strong{font-size:12px;color:#1c4c38}
+.footer{text-align:center;padding:8px 0 1px;font-size:10px;color:#687b82}
+</style>
+</head>
+<body>
+<div class="dashboard">
+
+<div class="topbar">
+  <div class="brand">M.O.O.N ROVER CONTROL</div>
+  <div class="status"><span class="dot"></span><span id="connection">ROVER ONLINE</span></div>
+</div>
+
+<section class="camera-panel">
+  <div class="title">Live Camera</div>
+  <div class="camera">
+    <video id="camera" autoplay playsinline muted></video>
+    <div id="placeholder" class="placeholder">LIVE CAMERA FEED</div>
+    <div class="hud"></div>
+    <div class="caminfo">CAM 01 | LIVE | 16:7 LANDSCAPE</div>
+    <div class="rec"><i></i>LIVE</div>
+  </div>
+</section>
+
+<div class="bottom-grid">
+
+<section class="panel ai npk-panel">
+  <div class="title">NPK Actuator Control</div>
+  <div class="content npk-content">
+    <button class="glossy npk-button" onclick="sendApiControl('NPK_EXTEND')">EXTEND NPK</button>
+    <button class="glossy npk-button" style="margin-top:4px;" onclick="sendApiControl('NPK_RETRACT')">RETRACT NPK</button>
+    <button class="glossy npk-button" style="margin-top:4px;" onclick="sendApiControl('NPK_STOP')">STOP NPK</button>
+    <div class="npk-status" id="npkStatus">Ready</div>
+  </div>
+</section>
+
+<section class="panel control">
+  <div class="title">Rover Control</div>
+  <div class="content control-content">
+    <div class="control-buttons">
+      <button class="glossy small" onclick="setMode('manual')">MANUAL</button>
+      <button class="glossy small" onclick="setMode('auto')">AUTO</button>
+      <button class="glossy small" onclick="stopRover()">STOP</button>
+    </div>
+
+    <div class="joystick" id="joystick">
+        <span class="joy-arrow joy-up">▲</span>
+        <span class="joy-arrow joy-left">◀</span>
+        <span class="joy-arrow joy-right">▶</span>
+        <span class="joy-arrow joy-down">▼</span>
+        <div class="joystick-knob" id="joystickKnob">●</div>
+    </div>
+
+    <div class="key-info">Keyboard: Arrow Keys / W A S D</div>
+    <div id="controlStatus" class="control-status">READY</div>
+  </div>
+</section>
+
+<section class="panel sensors">
+  <div class="title">Rover Sensor Readings</div>
+  <div class="readings">
+    <div class="reading"><span>Ultrasonic Distance</span><strong id="distance">-- cm</strong></div>
+  </div>
+  <div class="mode">MODE: <span id="mode">MANUAL</span></div>
+</section>
+
+</div>
+<div class="footer">M.O.O.N Soil Rover • Dashboard Interface</div>
+</div>
+
+<script>
+let lastAction = "STOP";
+
+async function sendApiControl(action) {
+    if (lastAction === action) return;
+    lastAction = action;
+
+    try {
+        const response = await fetch('/api/control', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action: action })
+        });
+        const data = await response.json();
+        if (data.status === 'success') {
+            document.getElementById("connection").textContent = "COMMAND: " + action;
+        }
+    } catch (e) {
+        document.getElementById("connection").textContent = "DISCONNECTED";
+    }
+}
+
+function stopRover() {
+    sendApiControl('STOP');
+    document.getElementById("controlStatus").textContent = "STOP";
+}
+
+function setMode(mode) {
+    document.getElementById("mode").textContent = mode.toUpperCase();
+}
+
+/* Joystick Handler */
+const joystick = document.getElementById("joystick");
+const joystickKnob = document.getElementById("joystickKnob");
+let joystickActive = false;
+
+function joystickPosition(event) {
+    const rect = joystick.getBoundingClientRect();
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height / 2;
+
+    let dx = event.clientX - cx;
+    let dy = event.clientY - cy;
+
+    const maxRadius = Math.min(rect.width, rect.height) * 0.34;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+
+    if (distance > maxRadius) {
+        dx = (dx / distance) * maxRadius;
+        dy = (dy / distance) * maxRadius;
+    }
+
+    joystickKnob.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px))`;
+
+    if (distance < maxRadius * 0.22) {
+        stopRover();
+        return;
+    }
+
+    if (Math.abs(dx) > Math.abs(dy)) {
+        if (dx > 0) sendApiControl('RIGHT');
+        else sendApiControl('LEFT');
+    } else {
+        if (dy > 0) sendApiControl('BACKWARD');
+        else sendApiControl('FORWARD');
+    }
+}
+
+function resetJoystick() {
+    joystickActive = false;
+    joystickKnob.style.transform = "translate(-50%, -50%)";
+    stopRover();
+}
+
+joystick.addEventListener("pointerdown", event => {
+    joystickActive = true;
+    joystick.setPointerCapture(event.pointerId);
+    joystickPosition(event);
+});
+joystick.addEventListener("pointermove", event => {
+    if (joystickActive) joystickPosition(event);
+});
+joystick.addEventListener("pointerup", resetJoystick);
+joystick.addEventListener("pointercancel", resetJoystick);
+
+/* Sensor Refresh Loop */
+async function fetchDistance() {
+    try {
+        const res = await fetch('/api/distance');
+        const data = await res.json();
+        if (data.status === 'success') {
+            document.getElementById("distance").textContent = data.raw_data;
+        }
+    } catch(e) {}
+}
+
+setInterval(fetchDistance, 2000);
+</script>
+</body>
+</html>
