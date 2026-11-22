@@ -6,7 +6,7 @@ Update:
 3. Coded the Arduino micro controller for the motion of the rover and controlling of the servos.
 4. Conducted a brief research on uploading or finding suitable highly compressed small image trained models for edge computing and computer vision.
 5. Actively participated and conducted the Field Rover testing of version 1 and noticed the anomaly in the design thus finalising a more stable mechanical structure.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: Shouvik Show [Role: Project Member]
 Date: 22/11/2026
 Update:
@@ -15,4 +15,5 @@ Update:
 3. Collected and used datasets from Kaggle for training and testing the different AI models.
 4. Trained and tested the AI models using Google Colab, focusing on model development and performance.
 5. Participated in testing the Field Rover Version 1 and found some design issues, helping to improve and make the structure more stable.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name: Granthik Ghosh
