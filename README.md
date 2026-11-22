@@ -1,7 +1,7 @@
 # M.O.O.N. — Intelligent Agricultural Rover 🌱
 
 <p align="center">
-  <img src="assets/prototype-front.jpg" alt="M.O.O.N. Intelligent Agricultural Rover" width="750">
+  <img src="6.jpeg" alt="M.O.O.N. Intelligent Agricultural Rover" width="750">
 </p>
 
 <p align="center">
