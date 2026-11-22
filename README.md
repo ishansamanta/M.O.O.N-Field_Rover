@@ -72,11 +72,11 @@ The project is being developed as a modular system. Rover movement, image acquis
 
 ## 3. Rover Prototype — Version 1
 
-The photograph below is the project's **Version 1 physical rover prototype**. It documents the initial mechanical and electronics arrangement developed for early testing.
+The photograph below is the **actual Version 1 physical rover prototype**. It documents the initial mechanical and electronics arrangement developed for early testing.
 
 <div align="center">
-  <a href="Inventory/Untitled%20Design.jpg">
-    <img src="Inventory/Untitled%20Design.jpg" alt="M.O.O.N. Intelligent Agricultural Rover — Version 1 prototype" width="82%">
+  <a href="rover_version_1.jpg">
+    <img src="Inventory/rover_version_1.jpg" alt="M.O.O.N. Intelligent Agricultural Rover — Version 1 prototype" width="82%">
   </a>
   <br>
   <sub><strong>Figure 1.</strong> M.O.O.N. — Version 1 rover prototype. Select the image to open the original file from the Inventory folder.</sub>
@@ -84,7 +84,7 @@ The photograph below is the project's **Version 1 physical rover prototype**. It
 
 The first prototype was used to explore the platform layout, four-wheel arrangement, mounting of electronic components, camera placement, and basic rover movement. Initial testing revealed design and stability issues. The observations from this version informed the team's decision to work towards a more stable mechanical structure.
 
-**Version 1 image:** [Open original image in Inventory](Inventory/Untitled%20Design.jpg) · [Browse all project media](Inventory/)
+[Open the original Version 1 photograph](Inventory/rover_version_1.jpg) · [Browse all project media](Inventory/)
 
 ## 4. Project Objectives
 
@@ -305,24 +305,43 @@ The repository work log records the following contributions dated **22 November 
 
 ## 12. Project Media and Resources
 
-The **Inventory** directory is the source collection for project photographs, prototype videos, the official project document, the rover control sketch, and the 3D model.
+The `Inventory/` directory is the project's source collection for prototype photographs, rover demonstration videos, technical documents, source code, and the 3D model. The gallery below embeds **all 30 image files currently stored in Inventory**. Select any thumbnail to open its original file.
 
-### Key resources
+### 12.1 Complete image gallery
 
-| Resource | Link |
+<details open>
+<summary><strong>View all 30 Inventory images</strong></summary>
+
+<table>
+<tr><td align="center" valign="top" width="33%"><a href="Inventory/1b2e333b-b999-4ff9-99aa-126fafdfacf6.jpg"><img src="Inventory/1b2e333b-b999-4ff9-99aa-126fafdfacf6.jpg" alt="1b2e333b-b999-4ff9-99aa-126fafdfacf6.jpg" width="220"></a><br><sub>1b2e333b-b999-4ff9-99aa-126fafdfacf6.jpg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/6.jpeg"><img src="Inventory/6.jpeg" alt="6.jpeg" width="220"></a><br><sub>6.jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/6da8b729-bce1-4255-9f06-20a695723386.jpg"><img src="Inventory/6da8b729-bce1-4255-9f06-20a695723386.jpg" alt="6da8b729-bce1-4255-9f06-20a695723386.jpg" width="220"></a><br><sub>6da8b729-bce1-4255-9f06-20a695723386.jpg</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="Inventory/8b293d74-b255-4940-9a00-30b70bd94920.jpg"><img src="Inventory/8b293d74-b255-4940-9a00-30b70bd94920.jpg" alt="8b293d74-b255-4940-9a00-30b70bd94920.jpg" width="220"></a><br><sub>8b293d74-b255-4940-9a00-30b70bd94920.jpg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/Untitled%20Design.jpg"><img src="Inventory/Untitled%20Design.jpg" alt="Untitled Design.jpg" width="220"></a><br><sub>Untitled Design.jpg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.33%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.33%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 8.57.33 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 8.57.33 PM.jpeg</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM%20(1).jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM%20(1).jpeg" alt="WhatsApp Image 2026-11-22 at 8.57.34 PM (1).jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 8.57.34 PM (1).jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 8.57.34 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 8.57.34 PM.jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.35%207.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.35%207.jpeg" alt="WhatsApp Image 2026-11-22 at 8.57.35 7.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 8.57.35 7.jpeg</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.35%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.35%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 8.57.35 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 8.57.35 PM.jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM%20(1).jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM%20(1).jpeg" alt="WhatsApp Image 2026-11-22 at 8.57.36 PM (1).jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 8.57.36 PM (1).jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM%20(2).jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM%20(2).jpeg" alt="WhatsApp Image 2026-11-22 at 8.57.36 PM (2).jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 8.57.36 PM (2).jpeg</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM%20(3).jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM%20(3).jpeg" alt="WhatsApp Image 2026-11-22 at 8.57.36 PM (3).jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 8.57.36 PM (3).jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 8.57.36 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 8.57.36 PM.jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.37%20PM%20(1).jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.37%20PM%20(1).jpeg" alt="WhatsApp Image 2026-11-22 at 8.57.37 PM (1).jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 8.57.37 PM (1).jpeg</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.37%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.37%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 8.57.37 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 8.57.37 PM.jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.38%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.38%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 8.57.38 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 8.57.38 PM.jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%209.05.04%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.05.04%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 9.05.04 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 9.05.04 PM.jpeg</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%209.05.05%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.05.05%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 9.05.05 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 9.05.05 PM.jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%209.23.47%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.23.47%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 9.23.47 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 9.23.47 PM.jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%209.25.14%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.25.14%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 9.25.14 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 9.25.14 PM.jpeg</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%209.26.21%20PM%20(1).jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.26.21%20PM%20(1).jpeg" alt="WhatsApp Image 2026-11-22 at 9.26.21 PM (1).jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 9.26.21 PM (1).jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%209.26.21%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.26.21%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 9.26.21 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 9.26.21 PM.jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%209.26.22%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.26.22%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 9.26.22 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 9.26.22 PM.jpeg</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="Inventory/WhatsApp%20Image%202026-11-22%20at%209.26.26%20PM.jpeg"><img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.26.26%20PM.jpeg" alt="WhatsApp Image 2026-11-22 at 9.26.26 PM.jpeg" width="220"></a><br><sub>WhatsApp Image 2026-11-22 at 9.26.26 PM.jpeg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/ae0e8ca1-1191-4048-b03c-eed992e2173e.jpg"><img src="Inventory/ae0e8ca1-1191-4048-b03c-eed992e2173e.jpg" alt="ae0e8ca1-1191-4048-b03c-eed992e2173e.jpg" width="220"></a><br><sub>ae0e8ca1-1191-4048-b03c-eed992e2173e.jpg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/ff145f2c-4d0f-49dd-8f71-b5d5cee41a04.jpg"><img src="Inventory/ff145f2c-4d0f-49dd-8f71-b5d5cee41a04.jpg" alt="ff145f2c-4d0f-49dd-8f71-b5d5cee41a04.jpg" width="220"></a><br><sub>ff145f2c-4d0f-49dd-8f71-b5d5cee41a04.jpg</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><a href="Inventory/ff9191a7-0399-433b-940f-2be64a7e7f90.jpg"><img src="Inventory/ff9191a7-0399-433b-940f-2be64a7e7f90.jpg" alt="ff9191a7-0399-433b-940f-2be64a7e7f90.jpg" width="220"></a><br><sub>ff9191a7-0399-433b-940f-2be64a7e7f90.jpg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/ffdf34b5-d517-4307-990c-b87411345011.jpg"><img src="Inventory/ffdf34b5-d517-4307-990c-b87411345011.jpg" alt="ffdf34b5-d517-4307-990c-b87411345011.jpg" width="220"></a><br><sub>ffdf34b5-d517-4307-990c-b87411345011.jpg</sub></td><td align="center" valign="top" width="33%"><a href="Inventory/rover_version_1.jpg"><img src="Inventory/rover_version_1.jpg" alt="rover_version_1.jpg" width="220"></a><br><sub>rover_version_1.jpg</sub></td></tr>
+</table>
+</details>
+
+### 12.2 Rover demonstration videos
+
+The following video files are stored in the Inventory. Open each link to view the original MP4.
+
+- [Open video 1: WhatsApp Video 2026-11-22 at 8.57.34 PM.mp4](<Inventory/WhatsApp%20Video%202026-11-22%20at%208.57.34%20PM.mp4>)
+- [Open video 2: WhatsApp Video 2026-11-22 at 9.05.04 PM.mp4](<Inventory/WhatsApp%20Video%202026-11-22%20at%209.05.04%20PM.mp4>)
+
+### 12.3 Technical documents and project files
+
+| Resource | Description |
 |---|---|
-| Version 1 rover photograph | [Open original image](Inventory/Untitled%20Design.jpg) |
-| Complete project inventory | [Browse Inventory](Inventory/) |
-| Official SIH project document | [Open PDF](Inventory/MOON_SIH2026_Official_Template_Fitted_Final90.pdf) |
-| Complete work log | [Open work log](Inventory/Inventory%20%26%20Work%20Logs) |
-| Arduino locomotion code | [Open .ino file](Inventory/rover_locomotion_demo.ino) |
-| Rover 3D model | [Open / download .OBJ](Inventory/tinker.obj) |
-| Rover demonstration video 1 | [Watch / open video](Inventory/WhatsApp%20Video%202026-11-22%20at%208.57.34%20PM.mp4) |
-| Rover demonstration video 2 | [Watch / open video](Inventory/WhatsApp%20Video%202026-11-22%20at%209.05.04%20PM.mp4) |
-
-### Additional photographs
-
-The Inventory also contains additional project photographs and image files documenting prototype development and project work. Open the [Inventory image collection](Inventory/) to view the original files.
+| [Official SIH project document](Inventory/MOON_SIH2026_Official_Template_Fitted_Final90.pdf) | Project presentation / official document |
+| [Inventory & Work Logs](Inventory/Inventory%20%26%20Work%20Logs) | Recorded team contributions and development updates |
+| [Arduino locomotion sketch](Inventory/rover_locomotion_demo.ino) | Rover movement-control source code |
+| [Rover 3D model](Inventory/tinker.obj) | OBJ-format mechanical model |
+| [Complete Inventory folder](Inventory/) | Browse every stored project file |
 
 ## 13. Future Development Plan
 
