@@ -1,12 +1,10 @@
 # M.O.O.N. — Intelligent Agricultural Rover 🌱
 
 <p align="center">
-  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/Inventory/6.jpeg" alt="M.O.O.N. Intelligent Agricultural Rover" width="500">
+  <img src="https://raw.githubusercontent.com/ishansamanta/M.O.O.N-Field_Rover/main/Inventory/6.jpeg" alt="M.O.O.N. Intelligent Agricultural Rover" width="620">
 </p>
 
-<p align="center">
-  **Mobile Robotics | Artificial Intelligence | Computer Vision | Smart Agriculture**
-</p>
+<p align="center"><strong>Mobile Robotics · Artificial Intelligence · Computer Vision · Smart Agriculture</strong></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Smart%20India%20Hackathon-2026-blue" />
@@ -15,24 +13,44 @@
   <img src="https://img.shields.io/badge/Team-M.O.O.N-black" />
 </p>
 
+<p align="center">
+  <a href="https://github.com/ishansamanta/M.O.O.N-Field_Rover/tree/main/Inventory">📁 Project Inventory & Media</a>
+</p>
+
+---
+
+## Table of Contents
+
+1. [Project Overview](#1-project-overview)
+2. [Project Vision](#2-project-vision)
+3. [Key Features](#3-key-features)
+4. [Rover Development — Version 1](#4-rover-development--version-1)
+5. [Hardware Architecture and Components](#5-hardware-architecture-and-components)
+6. [System Architecture and Working Methodology](#6-system-architecture-and-working-methodology)
+7. [AI and Computer Vision Modules](#7-ai-and-computer-vision-modules)
+8. [AI Demonstrations](#8-ai-demonstrations)
+9. [Technology Stack](#9-technology-stack)
+10. [Prototype Testing and Demonstration](#10-prototype-testing-and-demonstration)
+11. [Feasibility, Challenges and Scalability](#11-feasibility-challenges-and-scalability)
+12. [Expected Impact](#12-expected-impact)
+13. [Development Roadmap](#13-development-roadmap)
+14. [Project Team](#14-project-team)
+15. [Repository Structure and Resources](#15-repository-structure-and-resources)
+16. [Research and Technical References](#16-research-and-technical-references)
+
 ---
 
 ## 1. Project Overview
 
-**M.O.O.N. (Intelligent Agricultural Rover)** is a smart, four-wheel mobile agricultural monitoring system developed to improve field-level data collection and support data-driven farming decisions.
+**M.O.O.N. (Intelligent Agricultural Rover)** is a four-wheel mobile agricultural monitoring system developed to support field-level data collection and data-driven farming decisions.
 
-The system integrates embedded electronics, environmental sensors, camera-based image acquisition, artificial intelligence, machine learning, and cloud-based data processing into a unified agricultural platform.
-
-The rover is designed to collect information from different locations in an agricultural field, process sensor and image data, and present meaningful agricultural insights through a dedicated web dashboard.
-
-The primary objective is to help farmers and agricultural researchers monitor crop conditions, identify potential problems, and make more informed agricultural decisions.
+The platform brings together a mobile rover, embedded electronics, environmental sensors, camera-based image acquisition, AI/ML analysis, cloud processing, and a dedicated web dashboard. The intended workflow is to collect images and sensor readings from different locations in a field, process the information, and present useful agricultural observations through a centralized interface.
 
 ### Project Information
 
 | Parameter | Details |
 |---|---|
-| Project Name | M.O.O.N. |
-| Full Name | Intelligent Agricultural Rover |
+| Project | M.O.O.N. — Intelligent Agricultural Rover |
 | Competition | Smart India Hackathon 2026 |
 | Problem Statement ID | SIH26210 |
 | Team ID | 177743 |
@@ -40,468 +58,408 @@ The primary objective is to help farmers and agricultural researchers monitor cr
 | Theme | Agriculture, Food Tech & Rural Development |
 | Category | Hardware |
 
----
-
 ## 2. Project Vision
 
-Our vision is to develop an intelligent agricultural rover capable of transforming conventional field inspection into an automated, sensor-driven, and AI-assisted monitoring process.
+Our vision is to make agricultural field inspection more systematic through a mobile platform that combines robotics, sensing, and AI-assisted image analysis.
 
-Instead of depending entirely on manual field observation, M.O.O.N. aims to collect agricultural information from multiple locations and convert it into understandable digital insights.
+### One Field Scan. Multiple Agricultural Insights.
 
-### One Field Scan. Four AI Insights.
+- **Crop Health Analysis:** Estimate leaf yellowness and healthy leaf area from images.
+- **Pest Intelligence:** Detect and count visible insect pests.
+- **Soil Recognition:** Classify soil categories from captured images.
+- **Disease Detection:** Develop image-based identification of potential crop diseases.
+- **Field Data Collection:** Bring camera and environmental sensor observations together.
 
-- **Crop Health Analysis:** Estimation of leaf yellowness and healthy leaf area.
-- **Pest Intelligence:** Pest detection and count estimation.
-- **Soil Recognition:** Automated soil type classification.
-- **Disease Detection:** Identification of potential plant diseases.
-
----
+AI outputs are intended as decision-support information and should be validated against field conditions and expert assessment.
 
 ## 3. Key Features
 
 ### 3.1 Four-Wheel Rover Mobility
-- Four-wheel mobile rover architecture.
-- Arduino-based motor control.
-- DC gear motor-driven movement.
-- Motor driver-based movement control.
-- Ultrasonic obstacle detection using HC-SR04.
-- Designed for agricultural field monitoring.
+- Four-wheel mobile rover platform.
+- Arduino-based movement-control architecture.
+- DC gear motors and motor-driver-based control.
+- Servo-based mechanisms in the prototype control setup.
+- Ultrasonic obstacle sensing using HC-SR04.
 
 ### 3.2 Environmental Monitoring
-- Temperature measurement.
-- Humidity monitoring.
+- Temperature and humidity sensing.
 - Air-quality monitoring.
 - Expandable sensor architecture for additional agricultural parameters.
 
-### 3.3 Camera-Based Monitoring
+### 3.3 Camera-Based Field Observation
 - Crop and leaf image acquisition.
 - Soil image collection.
-- Computer vision-based image processing.
-- Image-based agricultural observation.
+- Rover-camera image capture for field observation.
+- Computer-vision-based image processing.
 
-### 3.4 AI/ML-Based Agricultural Analysis
+### 3.4 AI/ML Agricultural Analysis
 
-| AI Module | Function |
+| Module | Intended function |
 |---|---|
-| Crop Health Analysis | Estimates leaf yellowness and healthy leaf area |
-| Pest Intelligence | Detects pests and estimates their count |
-| Soil Recognition | Classifies soil types using image analysis |
-| Disease Detection | Identifies potential plant diseases |
+| Crop health / yellow index | Segmentation and estimation of yellow and healthy leaf regions |
+| Pest detection | Detection of visible pests such as whiteflies, beetles and caterpillars |
+| Soil classification | Image-based soil category recognition |
+| Crop disease detection | Identification of potential disease symptoms |
 
-### 3.5 Cloud and Web Dashboard
-- Centralized agricultural data monitoring.
-- AI-generated analysis results.
-- Image and sensor data visualization.
+### 3.5 Web Dashboard and Cloud Architecture
+- Centralized monitoring through the project web dashboard.
+- Visualization of sensor readings and AI outputs.
 - Internet-based data transmission.
-- Cloud storage and processing.
-- Architecture designed for future AI model integration.
+- Cloud-based storage and model processing architecture.
+- Modular integration so selected AI modules can be used as required.
 
----
+## 4. Rover Development — Version 1
 
-## 4. Hardware Architecture and Components
+Version 1 is the first physical field-rover prototype. It was built to test the mechanical layout, wheel arrangement, electronics placement, sensor mounting, and basic movement-control concept.
 
-The rover combines embedded computing, motor control, sensors, camera-based data acquisition, and a power supply system.
+The initial prototype uses a raised platform supported by a four-wheel structure. Testing helped the team identify mechanical stability and layout issues, which informed the next design iteration.
 
-### 4.1 Main Hardware Components
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ishansamanta/M.O.O.N-Field_Rover/main/Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.33%20PM.jpeg" alt="Rover prototype" width="720">
+</p>
 
-| Component | Purpose |
+**Version 1 development photographs**
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ishansamanta/M.O.O.N-Field_Rover/main/Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM.jpeg" alt="Rover prototype development" width="48%">
+  <img src="https://raw.githubusercontent.com/ishansamanta/M.O.O.N-Field_Rover/main/Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM%20(1).jpeg" alt="Rover prototype electronics" width="48%">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ishansamanta/M.O.O.N-Field_Rover/main/Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.35%20PM.jpeg" alt="Rover hardware testing" width="48%">
+  <img src="https://raw.githubusercontent.com/ishansamanta/M.O.O.N-Field_Rover/main/Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM.jpeg" alt="Rover chassis and electronics" width="48%">
+</p>
+
+## 5. Hardware Architecture and Components
+
+The rover separates low-level mobility control from higher-level image and data processing.
+
+### 5.1 Main Hardware Components
+
+| Component | Role |
 |---|---|
-| Raspberry Pi 3B+ | Main processing and data acquisition |
+| Raspberry Pi 3B+ | Main embedded processing and data-acquisition platform |
 | Arduino UNO R3 | Rover movement and hardware control |
-| DC Gear Motors (4) | Four-wheel mobility |
-| Motor Driver | Motor direction and speed control |
-| HC-SR04 Ultrasonic Sensor | Obstacle detection |
-| DHT11 Sensor | Temperature and humidity monitoring |
-| MQ-135 Sensor | Air-quality monitoring |
-| Camera / Webcam | Crop, leaf and soil image acquisition |
-| Battery System | Power supply |
-| Wi-Fi / Internet | Data communication |
+| DC gear motors | Four-wheel mobility |
+| Motor driver | Motor direction and speed control |
+| Servo motors | Actuation of mounted mechanisms |
+| HC-SR04 ultrasonic sensor | Distance measurement and obstacle detection |
+| DHT11 sensor | Temperature and humidity monitoring |
+| MQ-135 sensor | Air-quality sensing |
+| Camera / webcam | Crop, leaf, pest and soil image acquisition |
+| Battery system | Power supply for rover electronics and drive |
 
-### 4.2 Mechanical Rover Design
+*The table describes the planned and prototype hardware architecture; exact deployed quantities and wiring should be confirmed against the final circuit.*
 
-The rover uses a four-wheel chassis with individual wheel-drive arrangements. Its mechanical structure is designed to accommodate electronic components, sensing modules, and the camera system.
+### 5.2 Mechanical Design and CAD
 
-**Conceptual CAD Design**
+The chassis is designed to carry the controller boards, battery, sensors, and camera equipment while maintaining a practical wheelbase for field movement.
 
-![M.O.O.N. Rover CAD Model](assets/rover-cad.jpg)
+**3D model:** [Download the Tinkercad OBJ model](Inventory/tinker.obj)
 
-**Physical Rover Platform**
+### 5.3 Circuit and Wiring
 
-![M.O.O.N. Rover Platform](assets/rover-platform-overview.jpg)
+The circuit plan documents connections between the controller, motor-control hardware, sensors, and power distribution. Refer to the circuit and wiring photographs in the [Inventory folder](https://github.com/ishansamanta/M.O.O.N-Field_Rover/tree/main/Inventory).
 
-*Assembled four-wheel platform showing the mechanical structure, component placement, sensor arrangement, and electronics.*
+### 5.4 Electronics Integration
 
-### 4.3 Circuit and Wiring Architecture
+The physical prototype brings together the Arduino controller, Raspberry Pi platform, breadboards, sensor modules, wiring, and camera components. The electronics layout is being refined as the rover evolves from Version 1.
 
-![M.O.O.N. Circuit Diagram](assets/circuit-diagram.jpg)
+### 5.5 Power Management
 
-*Hardware wiring and connection architecture for the rover's electronic components.*
+The rover uses a battery-based power arrangement. Power distribution and charging are important considerations for reliable motor operation and stable controller/sensor supply. The final design should keep motor power and sensitive logic supply appropriately regulated.
 
-### 4.4 Electronics Integration
+## 6. System Architecture and Working Methodology
 
-![M.O.O.N. Electronics Platform](assets/electronics-platform-closeup.jpg)
+### 6.1 Working Process
 
-*Physical electronics arrangement showing the controller boards, ultrasonic sensor, breadboards, wiring, and other electronic modules.*
+1. **Rover movement:** Arduino UNO controls the motor driver and rover movement.
+2. **Distance sensing:** The ultrasonic sensor measures nearby obstacles.
+3. **Image acquisition:** The camera captures crop, leaf, pest, and soil images.
+4. **Sensor acquisition:** The embedded system reads connected environmental sensors.
+5. **Data preparation:** Local software prepares images and sensor readings.
+6. **AI processing:** Selected agricultural AI models analyze the submitted images.
+7. **Data transmission:** Results and relevant input data are transmitted over the network.
+8. **Dashboard display:** The web dashboard presents observations and analysis results.
 
-The electronics architecture separates movement control from higher-level data processing, allowing modular development and future expansion.
-
-### 4.5 Power Management and Charging
-
-![M.O.O.N. Battery Charging Setup](assets/battery-charging-setup.jpg)
-
-*Battery charging and power supply arrangement used during prototype development.*
-
-The power system supplies the rover's electronic and motor-control components. Power distribution, battery management, and efficient energy consumption are important considerations for reliable field operation.
-
-### 4.6 Downloadable 3D Model
-
-The project also includes an OBJ-format 3D model exported from Tinkercad.
-
-**[Download M.O.O.N. Rover 3D Model (.OBJ)](models/tinker.obj)**
-
-The model can be used for 3D visualization, mechanical reference, and further chassis development.
-
----
-
-## 5. System Architecture and Working Methodology
-
-M.O.O.N. follows a structured workflow connecting physical rover operations with digital agricultural analysis.
-
-### 5.1 Working Process
-
-1. **Rover Movement:** Arduino UNO controls the four-wheel drive system through the motor driver.
-2. **Obstacle Detection:** HC-SR04 detects nearby obstacles and supports movement safety.
-3. **Data Acquisition:** The Raspberry Pi collects camera images and environmental sensor readings.
-4. **Local Processing:** Python-based processing prepares and validates collected information.
-5. **Data Transmission:** Images and sensor readings are transmitted through Wi-Fi/Internet.
-6. **AI/ML Processing:** Agricultural images are analyzed using computer vision and AI/ML models.
-7. **Cloud Integration:** Processed information can be stored and organized for centralized access.
-8. **Dashboard Visualization:** The web dashboard presents field information and analysis results.
-
-### 5.2 System Data Flow
+### 6.2 Conceptual Data Flow
 
 ```text
-             AGRICULTURAL FIELD
-                      |
-                      v
-              FOUR-WHEEL ROVER
-                      |
-             +--------+--------+
-             |                 |
-             v                 v
-        CAMERA SYSTEM     ENVIRONMENTAL
-                              SENSORS
-             |                 |
-             +--------+--------+
-                      |
-                      v
-                RASPBERRY PI 3B+
-                DATA ACQUISITION
-                      |
-                      v
-             IMAGE / SENSOR DATA
-                  PROCESSING
-                      |
-                      v
-               WI-FI / INTERNET
-                      |
-                      v
-                CLOUD / AI ENGINE
-                      |
-          +-----------+-----------+
-          |           |           |
-          v           v           v
-        CROP         PEST       SOIL /
-       HEALTH     DETECTION    DISEASE
-          |           |           |
-          +-----------+-----------+
-                      |
-                      v
-                WEB DASHBOARD
-                      |
-                      v
-             AGRICULTURAL INSIGHTS
+                 AGRICULTURAL FIELD
+                         |
+                         v
+                  FOUR-WHEEL ROVER
+                         |
+             +-----------+-----------+
+             |                       |
+             v                       v
+        CAMERA SYSTEM          ENVIRONMENTAL
+                                  SENSORS
+             |                       |
+             +-----------+-----------+
+                         |
+                         v
+                EMBEDDED COMPUTING
+                  (RASPBERRY PI)
+                         |
+                  IMAGE / SENSOR DATA
+                         |
+                         v
+                  WI-FI / INTERNET
+                         |
+                         v
+                  AI PROCESSING LAYER
+            +------------+-------------+
+            |            |             |
+            v            v             v
+        CROP HEALTH    PEST         SOIL /
+        / YELLOW       DETECTION    DISEASE
+        INDEX
+            |            |             |
+            +------------+-------------+
+                         |
+                         v
+                   WEB DASHBOARD
+                         |
+                         v
+                AGRICULTURAL INSIGHTS
 ```
 
-*Conceptual system architecture. Individual AI modules are progressively developed and integrated.*
+This is the intended system-level workflow. Individual modules are developed and integrated progressively; it does not imply that every module is already operating simultaneously on the rover.
 
-### 5.3 Offline Data Handling
+### 6.3 Computing and Model Deployment Plan
 
-The proposed architecture also supports local data storage when internet connectivity is weak. Stored information can be synchronized with cloud services when connectivity becomes available.
+The project architecture separates rover control, camera/data acquisition, and AI inference. Raspberry Pi 3B+ is part of the rover-side processing setup, while the Arduino handles movement control. The team has also discussed using a separate Raspberry Pi 3B+ for selected lightweight AI workloads and remote/cloud inference for models that exceed edge-device limits.
 
----
+The final deployment arrangement will depend on model size, inference speed, network availability, and hardware testing. The dashboard is intended to let operators select the AI analysis modules required for a field session.
 
-## 6. AI and Computer Vision Implementation
+## 7. AI and Computer Vision Modules
 
-One of the major components of M.O.O.N. is its computer vision-based agricultural analysis system.
+### 7.1 Crop Health and Yellow Index Analysis
 
-The system processes captured leaf images to identify the leaf region, detect yellow or discolored areas, and estimate the relative proportion of healthy and affected regions.
-
-### 6.1 Leaf Segmentation and Health Estimation
-
-The image-processing workflow consists of:
+The leaf-analysis workflow shown in the project demonstrations includes:
 
 - Input image acquisition.
-- Leaf region segmentation.
-- Extraction of the leaf area.
+- Leaf-region segmentation.
+- Extraction of the segmented leaf area.
 - Identification of yellow-colored regions.
-- Pixel-based area calculation.
-- Percentage-based health estimation.
-- Visualization of detected regions.
+- Pixel-area calculation.
+- Percentage estimation of yellow and healthy regions.
+- Visualization of the segmented leaf and detected yellow region.
 
-### 6.2 Demonstration 1 — Crop Leaf Analysis
+The percentages are image-processing estimates for the displayed samples, not laboratory measurements or independent disease diagnoses.
 
-![Corn Leaf Segmentation and Analysis](assets/leaf-analysis-corn.jpg)
+### 7.2 Pest Detection
 
-**Observed Analysis Results**
+The pest-detection model is being developed to identify visible insects in crop imagery. Demonstration labels include whitefly, beetle, caterpillar, and insect-pest detections. Model predictions should be evaluated for precision, recall, and field performance before being used for operational decisions.
 
-| Parameter | Result |
+### 7.3 Soil Classification
+
+The soil-classification work includes image-based recognition of soil categories. The demonstration image contains labels for red soil and black soil. The displayed confidence values are model outputs for that image and should not be treated as laboratory soil tests.
+
+### 7.4 Crop Disease Detection
+
+Crop-disease detection is one of the AI modules being developed. It is intended to analyze crop images for potential disease symptoms. Dataset coverage, model validation, and field testing remain important before interpreting predictions as diagnoses.
+
+## 8. AI Demonstrations
+
+### 8.1 Leaf Health Analysis — Sample 1
+
+**Displayed sample results**
+
+| Metric | Result |
 |---|---:|
-| Segmented Leaf Area | 42,286 pixels |
-| Yellow Region | 11,092 pixels |
-| Yellow Area | 26.23% |
-| Healthy Area | 73.77% |
+| Segmented leaf area | 115,639 px |
+| Yellow region | 1,893 px |
+| Yellow area | 1.64% |
+| Healthy area | 98.36% |
 
-### 6.3 Demonstration 2 — Leaf Condition Analysis
+### 8.2 Leaf Health Analysis — Sample 2
 
-![Leaf Segmentation and Yellow Region Detection](assets/leaf-analysis-leaf.jpg)
+**Displayed sample results**
 
-**Observed Analysis Results**
-
-| Parameter | Result |
+| Metric | Result |
 |---|---:|
-| Segmented Leaf Area | 115,639 pixels |
-| Yellow Region | 1,893 pixels |
-| Yellow Area | 1.64% |
-| Healthy Area | 98.36% |
+| Segmented leaf area | 42,286 px |
+| Yellow region | 11,092 px |
+| Yellow area | 26.23% |
+| Healthy area | 73.77% |
 
-*Note: These values represent image-processing estimates from the displayed samples. They are not independently validated plant disease diagnoses.*
+### 8.3 Soil Classification Demonstration
 
----
+The soil-image example shows detections labelled **red soil** and **black soil**. The confidence scores shown in the screenshot are model predictions for the displayed image.
 
-## 7. Prototype Development and Hardware Demonstration
+### 8.4 Pest Detection Demonstration
 
-M.O.O.N. has progressed through conceptual mechanical design, circuit planning, physical chassis development, electronics integration, and prototype testing.
+The pest-image example shows bounding-box predictions for labels including **whitefly**, **beetle**, **caterpillar**, and **insect pest**.
 
-The following photographs document the physical development of the rover.
+### 8.5 Rover-Camera AI Demonstration
 
-### 7.1 Front View
+A combined rover-camera output is included in the project media collection. It illustrates the intended direction of bringing rover imagery and AI detections together.
 
-![M.O.O.N. Rover Front View](assets/prototype-front.jpg)
+**Important media note:** The four latest demonstration images shared in this conversation (the soil-classification image, pest-detection image, laptop/team-work image, and combined rover-camera image) were not present in the GitHub `Inventory/` directory when it was inspected. They are therefore not embedded with guessed paths here. Upload those four original files into `Inventory/` to make them available for direct README embedding.
 
-### 7.2 Rear View
-
-![M.O.O.N. Rover Rear View](assets/prototype-rear.jpg)
-
-### 7.3 Side View
-
-![M.O.O.N. Rover Side View](assets/prototype-side.jpg)
-
-### 7.4 Electronics Testing
-
-![M.O.O.N. Electronics Testing](assets/electronics-testing.jpg)
-
-### 7.5 System Testing
-
-![M.O.O.N. System Testing](assets/system-testing.jpg)
-
-### 7.6 Field Testing
-
-![M.O.O.N. Rover Field Testing](assets/field-testing.jpg)
-
-### 7.7 Rover Demonstration
-
-![M.O.O.N. Rover Demonstration](assets/rover-demonstration.jpg)
-
-### 7.8 Team and Prototype
-
-![M.O.O.N. Team with Rover](assets/team-prototype.jpg)
-
-### 7.9 Rover Demonstration Video
-
-The project also includes a recorded video documenting the physical rover and its demonstration.
-
-**[▶ Watch the M.O.O.N. Rover Demonstration](media/rover-demonstration.mp4)**
-
----
-
-## 8. Technology Stack
+## 9. Technology Stack
 
 | Technology | Application |
 |---|---|
-| Python | Processing and system development |
-| Raspberry Pi 3B+ | Embedded computing |
-| Arduino UNO R3 | Hardware and motor control |
-| Computer Vision | Image processing and segmentation |
-| AI / Machine Learning | Agricultural analysis |
+| Python | Data processing and system development |
+| Raspberry Pi 3B+ | Embedded computing and data acquisition |
+| Arduino UNO R3 | Movement and hardware control |
+| Computer Vision | Image analysis and segmentation |
+| AI / Machine Learning | Crop, pest, soil, and disease analysis |
 | OpenCV | Image processing |
 | PyTorch | AI/ML model development |
-| Wi-Fi / Internet | Communication |
-| Cloud Storage | Data storage and synchronization |
-| Web Technologies | Digital monitoring dashboard |
+| Google Colab | Model training and testing |
+| Wi-Fi / Internet | Data communication |
+| Cloud services | Remote model processing and data storage |
+| Web technologies | Project monitoring dashboard |
 
----
+## 10. Prototype Testing and Demonstration
 
-## 9. Feasibility, Challenges and Scalability
+The team has conducted initial physical testing of Rover Version 1. These tests helped identify mechanical and structural issues and informed the decision to improve the chassis design for a more stable subsequent version.
 
-### 9.1 Feasibility
-- Raspberry Pi-based processing.
-- Arduino-based motor control.
-- Camera and sensor integration.
-- Modular hardware configuration.
-- Cloud and AI/ML processing architecture.
+### 10.1 Rover and Hardware Photographs
 
-### 9.2 Scalability
-- Integration of additional soil sensors.
-- Expansion of AI/ML models.
-- Improved computer vision capabilities.
-- Enhanced field data visualization.
-- Future improvements in rover mobility and autonomy.
+Additional prototype, sensor, and electronics photographs are maintained in the [Inventory and Work Logs folder](https://github.com/ishansamanta/M.O.O.N-Field_Rover/tree/main/Inventory).
 
-### 9.3 Challenges and Mitigation Strategies
+### 10.2 Rover Demonstration Videos
 
-| Challenge | Proposed Strategy |
+- [Rover demonstration video — 8:57 PM](Inventory/WhatsApp%20Video%202026-11-22%20at%208.57.34%20PM.mp4)
+- [Rover demonstration video — 9:05 PM](Inventory/WhatsApp%20Video%202026-11-22%20at%209.05.04%20PM.mp4)
+
+### 10.3 Development Record
+
+The repository's [Inventory & Work Logs](Inventory/Inventory%20%26%20Work%20Logs) document records work on rover design, Raspberry Pi integration, circuit connections, Arduino movement and servo control, AI model development, dataset collection, training/testing, and Version 1 testing.
+
+## 11. Feasibility, Challenges and Scalability
+
+### 11.1 Current Development Considerations
+- Raspberry Pi-based data acquisition and embedded processing.
+- Arduino-based movement control.
+- Camera and environmental sensor integration.
+- Modular AI model development.
+- Web dashboard and cloud integration.
+
+### 11.2 Challenges and Mitigation
+
+| Challenge | Development approach |
 |---|---|
-| Uneven agricultural terrain | Suitable chassis and high-torque motors |
-| Battery consumption | Power management and battery monitoring |
-| Sensor accuracy | Sensor calibration and data filtering |
-| Dust and moisture | Protective electronics enclosure |
-| Poor internet connectivity | Local storage and cloud synchronization |
+| Uneven agricultural terrain | Improve chassis stability, wheel arrangement, and motor selection |
+| Battery consumption | Measure load and improve power management |
+| Sensor accuracy | Calibrate sensors and validate readings |
+| Dust and moisture | Add suitable enclosure and protection |
+| Weak internet connectivity | Consider local buffering and later synchronization |
+| Limited edge-computing resources | Optimize models or use remote inference where appropriate |
 
----
+### 11.3 Scalability
+- Add further agricultural sensors.
+- Expand and optimize AI/ML models.
+- Improve camera placement and image quality.
+- Improve dashboard reporting and field visualization.
+- Develop more autonomous navigation and field coverage.
 
-## 10. Expected Impact
+## 12. Expected Impact
 
-M.O.O.N. aims to support agricultural modernization through accessible mobile sensing and AI-assisted field monitoring.
+M.O.O.N. aims to support more systematic field observation through mobile sensing and AI-assisted analysis.
 
-| Impact Area | Expected Benefit |
+| Impact area | Intended benefit |
 |---|---|
-| Social | Easier and faster field monitoring |
-| Economic | Reduced manual inspection effort |
-| Environmental | Data-driven use of agricultural resources |
-| Technical | Centralized sensor and image-based field information |
-| Scalability | Expandable sensor and AI model architecture |
+| Social | Support easier field monitoring |
+| Economic | Potentially reduce repetitive manual inspection effort |
+| Environmental | Support data-informed agricultural decisions |
+| Technical | Combine rover mobility, sensors, image analysis, and a dashboard |
+| Scalability | Provide a platform for additional sensors and AI modules |
 
-### Target Users
-
+### Intended Users
 - Farmers and agricultural workers.
 - Agricultural researchers.
-- Field monitoring teams.
-- Agri-tech service providers.
+- Field-monitoring teams.
+- Agri-tech developers and service providers.
 
----
-
-## 11. Future Development Roadmap
-
-The project is designed for continuous improvement.
+## 13. Development Roadmap
 
 - [x] Initial four-wheel rover mechanical prototype.
 - [x] Hardware connection and wiring design.
-- [x] Arduino-based movement control architecture.
-- [x] Raspberry Pi-based data acquisition architecture.
-- [x] Initial camera-based leaf segmentation demonstration.
-- [ ] Complete integration of environmental sensors.
-- [ ] Integration of all four AI analysis modules.
-- [ ] Cloud-based AI processing integration.
-- [ ] Complete web dashboard integration.
-- [ ] Improved autonomous field navigation.
-- [ ] Extended field testing and validation.
-- [ ] Additional agricultural sensor integration.
+- [x] Arduino-based movement-control code.
+- [x] Raspberry Pi 3B+ integration work.
+- [x] Initial leaf segmentation and yellow-index analysis demonstration.
+- [x] AI model development work for pest, crop disease, and soil classification.
+- [x] Initial Version 1 rover testing and design review.
+- [ ] Refined and more stable rover chassis.
+- [ ] Complete environmental sensor integration and calibration.
+- [ ] Validate and optimize all AI models.
+- [ ] Integrate selectable AI modules into the live workflow.
+- [ ] Complete cloud inference and web-dashboard integration.
+- [ ] Improve autonomous field navigation.
+- [ ] Conduct extended field trials and model validation.
 
----
-
-## 12. Project Team
+## 14. Project Team
 
 **M.O.O.N. — Smart India Hackathon 2026**
 
-We are a student innovation team working towards developing an intelligent agricultural monitoring system by combining robotics, embedded systems, artificial intelligence, and computer vision.
+The project is being developed by a student team combining work in mechanical design, embedded systems, rover testing, AI model development, dataset preparation, and software integration.
 
-### Team Photograph
+### Team Photograph and Development Work
 
-<p align="center">
-  <img src="assets/team.jpg" alt="M.O.O.N. Project Team" width="750">
-</p>
+Team and development photographs are maintained in the [Inventory folder](https://github.com/ishansamanta/M.O.O.N-Field_Rover/tree/main/Inventory).
 
----
+### Work Log Highlights — 22 November 2026
 
-## 13. Research and Technical References
+The repository work log records the following contributions:
 
-### Research References
+- **Ishan Samanta — Project Lead:** Rover redesign and sizing, Raspberry Pi 3B+ integration, controller-board circuit connections, Arduino movement and servo-control code, research into compressed models for edge computing, and Version 1 testing/design review.
+- **Shouvik Show — Project Member:** Rover sizing and design, development of pest, crop-disease, yellow-index, and soil-classification AI models, Kaggle dataset collection, Google Colab training/testing, and Version 1 testing.
 
-- Agricultural Robotics — Annual Review: Agricultural robots, sensing, automation, and data-driven precision farming.
-- A Review of Robots, Perception, and Tasks in Precision Agriculture: Mobile agricultural robots, crop/soil monitoring, and robotic perception.
-- Integration of Smart Sensors and IoT in Precision Agriculture: Soil sensors, IoT-based monitoring, and data-driven agricultural decision-making.
-- FAO — Precision Agriculture for Smallholder Farmers: IoT, AI, cloud computing, and digital technologies in agriculture.
+## 15. Repository Structure and Resources
 
-### Technical References
-
-- Raspberry Pi Official Documentation — https://www.raspberrypi.com/documentation/
-- Arduino Official Documentation — https://docs.arduino.cc/
-- OpenCV Documentation — https://docs.opencv.org/
-- PyTorch Documentation — https://pytorch.org/docs/
-- Food and Agriculture Organization — https://www.fao.org/
-
----
-
-## 14. Repository Structure
+The repository uses the `Inventory/` directory as the media and project-resource collection. File names are retained as stored in GitHub; spaces in image and video names are URL-encoded in direct links.
 
 ```text
-MOON-Agricultural-Rover/
+M.O.O.N-Field_Rover/
 │
 ├── README.md
 │
-├── assets/
-│   ├── prototype-front.jpg
-│   ├── prototype-rear.jpg
-│   ├── prototype-side.jpg
-│   ├── rover-cad.jpg
-│   ├── rover-platform-overview.jpg
-│   ├── circuit-diagram.jpg
-│   ├── electronics-platform-closeup.jpg
-│   ├── battery-charging-setup.jpg
-│   ├── electronics-testing.jpg
-│   ├── field-testing.jpg
-│   ├── system-testing.jpg
-│   ├── rover-demonstration.jpg
-│   ├── team-prototype.jpg
-│   ├── team.jpg
-│   ├── leaf-analysis-corn.jpg
-│   └── leaf-analysis-leaf.jpg
-│
-├── models/
-│   └── tinker.obj
-│
-├── media/
-│   └── rover-demonstration.mp4
-│
-├── arduino/
-│
-├── raspberry-pi/
-│
-├── ai-models/
-│
-├── dashboard/
-│
-└── docs/
+└── Inventory/
+    ├── 6.jpeg
+    ├── Inventory & Work Logs
+    ├── MOON_SIH2026_Official_Template_Fitted_Final90.pdf
+    ├── WhatsApp Image 2026-11-22 at 8.57.33 PM.jpeg
+    ├── WhatsApp Image 2026-11-22 at 8.57.34 PM (1).jpeg
+    ├── WhatsApp Image 2026-11-22 at 8.57.34 PM.jpeg
+    ├── WhatsApp Image 2026-11-22 at 8.57.35 7.jpeg
+    ├── WhatsApp Image 2026-11-22 at 8.57.35 PM.jpeg
+    ├── WhatsApp Image 2026-11-22 at 8.57.36 PM (1).jpeg
+    ├── WhatsApp Image 2026-11-22 at 8.57.36 PM (2).jpeg
+    ├── WhatsApp Image 2026-11-22 at 8.57.36 PM (3).jpeg
+    ├── WhatsApp Image 2026-11-22 at 8.57.36 PM.jpeg
+    ├── WhatsApp Image 2026-11-22 at 8.57.37 PM (1).jpeg
+    ├── WhatsApp Image 2026-11-22 at 8.57.37 PM.jpeg
+    ├── WhatsApp Image 2026-11-22 at 8.57.38 PM.jpeg
+    ├── WhatsApp Image 2026-11-22 at 9.05.04 PM.jpeg
+    ├── WhatsApp Image 2026-11-22 at 9.05.05 PM.jpeg
+    ├── WhatsApp Video 2026-11-22 at 8.57.34 PM.mp4
+    ├── WhatsApp Video 2026-11-22 at 9.05.04 PM.mp4
+    ├── rover_locomotion_demo.ino
+    └── tinker.obj
 ```
 
-*The folder structure represents the recommended repository organization. Additional folders can be populated as their respective software and documentation are published.*
+### Direct Project Resources
 
----
+- [Open complete Inventory folder](https://github.com/ishansamanta/M.O.O.N-Field_Rover/tree/main/Inventory)
+- [Open Arduino rover locomotion sketch](Inventory/rover_locomotion_demo.ino)
+- [Download rover 3D model (.OBJ)](Inventory/tinker.obj)
+- [Open official SIH project document (PDF)](Inventory/MOON_SIH2026_Official_Template_Fitted_Final90.pdf)
+- [Open Inventory & Work Logs](Inventory/Inventory%20%26%20Work%20Logs)
 
-## 15. Project Information
+## 16. Research and Technical References
 
-**Project:** M.O.O.N. — Intelligent Agricultural Rover
-
-**Competition:** Smart India Hackathon 2026
-
-**Problem Statement ID:** SIH26210
-
-**Team ID:** 177743
-
-**Team Name:** M.O.O.N.
-
-**Theme:** Agriculture, Food Tech & Rural Development
+- [Raspberry Pi Documentation](https://www.raspberrypi.com/documentation/)
+- [Arduino Documentation](https://docs.arduino.cc/)
+- [OpenCV Documentation](https://docs.opencv.org/)
+- [PyTorch Documentation](https://pytorch.org/docs/)
+- [Google Colab](https://colab.research.google.com/)
+- [Food and Agriculture Organization (FAO)](https://www.fao.org/)
 
 ---
 
