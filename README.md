@@ -110,25 +110,15 @@ AI outputs are intended as decision-support information and should be validated 
 
 ## 4. Rover Development — Version 1
 
-Version 1 is the first physical field-rover prototype. It was built to test the mechanical layout, wheel arrangement, electronics placement, sensor mounting, and basic movement-control concept.
+The photograph below shows the **actual Version 1 rover prototype**. This first build was used to explore the mechanical layout, four-wheel arrangement, electronics mounting, camera placement, and basic rover-control setup.
 
-The initial prototype uses a raised platform supported by a four-wheel structure. Testing helped the team identify mechanical stability and layout issues, which informed the next design iteration.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ishansamanta/M.O.O.N-Field_Rover/main/Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.33%20PM.jpeg" alt="Rover prototype" width="720">
-</p>
-
-**Version 1 development photographs**
+The prototype has a raised rectangular platform supported by a four-wheel structure. Its top deck carries the camera and electronics, including the controller and power components. Initial testing of this build helped the team identify design and stability issues that informed the next mechanical iteration.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ishansamanta/M.O.O.N-Field_Rover/main/Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM.jpeg" alt="Rover prototype development" width="48%">
-  <img src="https://raw.githubusercontent.com/ishansamanta/M.O.O.N-Field_Rover/main/Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM%20(1).jpeg" alt="Rover prototype electronics" width="48%">
+  <img src="Inventory/rover_version_1.jpg" alt="M.O.O.N. agricultural rover — Version 1 prototype" width="760">
 </p>
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ishansamanta/M.O.O.N-Field_Rover/main/Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.35%20PM.jpeg" alt="Rover hardware testing" width="48%">
-  <img src="https://raw.githubusercontent.com/ishansamanta/M.O.O.N-Field_Rover/main/Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM.jpeg" alt="Rover chassis and electronics" width="48%">
-</p>
+<p align="center"><em>Figure 1. M.O.O.N. rover — Version 1 physical prototype.</em></p>
 
 ## 5. Hardware Architecture and Components
 
