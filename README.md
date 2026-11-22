@@ -1,4 +1,4 @@
-#          M.O.O.N. — Intelligent Agricultural Field Rover
+# <p align ='center'> M.O.O.N. — Intelligent Agricultural Field Rover </p>
 
 <p align="center">
   <strong>Mobile Robotics · Field Sensing · Soil Sampling · AI-Assisted Precision Agriculture</strong>
