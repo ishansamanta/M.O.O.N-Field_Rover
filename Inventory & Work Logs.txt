@@ -16,4 +16,11 @@ Update:
 4. Trained and tested the AI models using Google Colab, focusing on model development and performance.
 5. Participated in testing the Field Rover Version 1 and found some design issues, helping to improve and make the structure more stable.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Name: Granthik Ghosh
+Name: Granthik Ghosh [Role: Project Member]
+Date: 22/11/2026
+Update:
+1. Worked on the design of the Feild Rover and its accurate measurement for its restructuring.
+2. Worked on the setting up of the raspberry-pi3B+ and the serial communication between pi and Arduino.
+3. Worked on the coding part of the motion control of the Feild Rover.
+4. Done the circuit connection of the activities by the Feild Rover .
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
