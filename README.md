@@ -1,17 +1,24 @@
-<table>
-  <tr>
-    <td width="160" align="center">
-      <img src="assets/images/moon-logo.png"
-           alt="M.O.O.N. Logo"
-           width="130">
-    </td>
-    <td>
-      <h1>M.O.O.N. Rover</h1>
-      <h3>Mobile Observation and Object Navigation</h3>
-      <p><em>AI-Powered Agricultural Rover</em></p>
-    </td>
-  </tr>
+<div align="center">
+
+<table align="center" border="0">
+<tr>
+<td align="center" valign="middle">
+<img src="assets/images/moon-logo.png" width="110" alt="M.O.O.N. Logo">
+</td>
+<td align="left" valign="middle">
+<h1 style="font-size: 32px; margin: 0; white-space: nowrap;">
+M.O.O.N. ROVER
+</h1>
+<h3 style="margin: 0;">
+Mobile Observation and Object Navigation
+</h3>
+</td>
+</tr>
 </table>
+
+<p><b>AI-POWERED AGRICULTURAL ROBOTICS</b></p>
+
+</div>
 
 <p align="center">
   
