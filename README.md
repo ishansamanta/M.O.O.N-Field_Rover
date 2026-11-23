@@ -236,7 +236,7 @@ The circuit photograph is included as a development reference. Use the finalized
 
 ## 🧊 3D Model & CAD Design of the Rover
 
-<p align="center">
+<p align="left">
   <a href="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/3d%20model%20rover.obj">
     <b>🔗 Download the 3D Rover Model (OBJ)</b>
   </a>
