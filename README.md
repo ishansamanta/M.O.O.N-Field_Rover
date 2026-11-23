@@ -1,385 +1,721 @@
-# <p align ='center'> M.O.O.N. — Intelligent Agricultural Field Rover </p>
+# 🌙 M.O.O.N.
+### Mobile Observation and Object Navigation
 
 <p align="center">
-  <strong>Mobile Robotics · Field Sensing · Soil Sampling · AI-Assisted Precision Agriculture</strong>
+  <strong>AN AI-POWERED AGRICULTURAL ROVER</strong>
+  <br>
+  <em>Intelligent Observation. Agricultural Intelligence. Robotic Mobility.</em>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Project-M.O.O.N-245B45?style=for-the-badge" alt="M.O.O.N.">
-  <img src="https://img.shields.io/badge/Platform-Raspberry%20Pi%203B%2B-C51A4A?style=for-the-badge" alt="Raspberry Pi 3B+">
-  <img src="https://img.shields.io/badge/Controller-Arduino%20UNO-00979D?style=for-the-badge" alt="Arduino UNO">
-  <img src="https://img.shields.io/badge/Domain-Agricultural%20Robotics-4B8B3B?style=for-the-badge" alt="Agricultural Robotics">
-  <img src="https://img.shields.io/badge/SIH-2026-315A9B?style=for-the-badge" alt="Smart India Hackathon 2026">
+  <img src="https://img.shields.io/badge/Project-M.O.O.N.-111827?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI_Models-04-2563EB?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Platform-Raspberry_Pi-C51A4A?style=for-the-badge&logo=raspberrypi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Controller-Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-In_Development-orange?style=for-the-badge" />
 </p>
-
-<p align="center"><em>A modular field rover designed to bring mobile sensing, soil interaction and intelligent agricultural analysis closer to the field.</em></p>
 
 ---
 
-## 1. Project Overview
+## ✦ 01 — THE PROJECT
 
-**M.O.O.N. (Intelligent Agricultural Field Rover)** is an agricultural robotics project developed as a mobile platform for field observation, sensing and AI-assisted analysis. The system combines a four-wheel rover structure, embedded motor control, camera positioning, soil-interaction mechanisms and a Raspberry Pi-based edge-computing platform.
+**M.O.O.N.** (Mobile Observation and Object Navigation) is a modular, AI-powered agricultural rover designed to bring artificial intelligence, robotics, and intelligent monitoring into agricultural environments.
 
-The project is being developed to support agricultural workflows such as crop and pest observation, plant-disease analysis, soil classification and soil sampling. Its modular design separates low-level motion and actuator control from higher-level image processing and application development.
+Built around a distributed computing architecture, M.O.O.N. combines an eight-wheel robotic platform, two Raspberry Pi 3B+ computers, an Arduino Uno, and a custom web dashboard.
 
-M.O.O.N. is an active development project. This README distinguishes hardware and functions documented in the repository from capabilities that are still being integrated or validated.
+Its primary intelligence comes from four specialized AI models designed to analyze agricultural environments:
 
-## 2. Project Information
+- Soil Detection
+- Crop Detection
+- Crop Disease Detection
+- Pest Detection
 
-| Item | Details |
-|---|---|
-| Project | M.O.O.N. — Intelligent Agricultural Field Rover |
-| Team | M.O.O.N. |
-| Team ID | 177743 |
-| Problem Statement ID | SIH26210 |
-| Programme | Smart India Hackathon 2026 |
-| Theme | Agriculture, Food Technology & Rural Development |
-| Category | Hardware |
-| Rover footprint | Approximately 2 ft × 2 ft (as recorded in the work log) |
-| Edge-computing platform | Raspberry Pi 3B+ |
-| Motion and actuator controller | Arduino UNO |
-| Motor driver architecture | BTS7960-based left and right drive channels |
+The rover captures real-time visual information, processes it through selected AI models, and presents the results through its web dashboard.
 
-## 3. Design Objectives
+The system is designed to allow operators to select individual models or multiple models according to their requirements.
 
-- Develop a mobile four-wheel platform for agricultural field observation.
-- Provide controlled rover movement and camera/sensor positioning.
-- Support soil interaction through dedicated drill and NPK actuator mechanisms.
-- Acquire field imagery for crop, pest and soil analysis.
-- Explore compact AI models suitable for resource-constrained edge computing.
-- Build a modular software architecture for sensing, processing and presenting field observations.
+<p align="center">
+  <strong>ONE ROVER. FOUR AI MODELS. ONE INTELLIGENT AGRICULTURAL PLATFORM.</strong>
+</p>
 
-## 4. System Architecture
+---
 
-| Subsystem | Main components / platform | Responsibility |
-|---|---|---|
-| Mobility | Chassis, DC drive motors, BTS7960 motor drivers | Rover movement and steering |
-| Embedded control | Arduino UNO | Motor, servo, relay and ultrasonic control |
-| Edge computing | Raspberry Pi 3B+ | Intended host for image processing, AI inference and application coordination |
-| Distance sensing | HC-SR04-compatible ultrasonic interface in firmware | Distance measurement |
-| Camera positioning | Pan servo | Camera/sensor orientation |
-| Soil interaction | Drill actuator servos, NPK actuator servos, drill DC motor and relay | Mechanical soil-interaction operations |
-| Application layer | Flask application directory | Web application / dashboard development |
-| AI workstreams | Experimental computer-vision models | Pest, crop-disease, soil and leaf analysis |
+## ✦ 02 — AT A GLANCE
 
-### Conceptual data flow
+<table>
+<tr>
+<td align="center" width="25%">
+<h2>04</h2>
+<strong>AI Models</strong>
+<br>
+<sub>Agricultural Intelligence</sub>
+</td>
+<td align="center" width="25%">
+<h2>02</h2>
+<strong>Raspberry Pis</strong>
+<br>
+<sub>Distributed Processing</sub>
+</td>
+<td align="center" width="25%">
+<h2>08</h2>
+<strong>Wheels</strong>
+<br>
+<sub>Mobile Platform</sub>
+</td>
+<td align="center" width="25%">
+<h2>01</h2>
+<strong>Dashboard</strong>
+<br>
+<sub>Central Interface</sub>
+</td>
+</tr>
+</table>
+
+### Core Capabilities
+
+| Capability | Description |
+|:---|:---|
+| 👁️ Environmental Observation | Camera-based agricultural monitoring |
+| 🧠 Artificial Intelligence | Four specialized agricultural AI models |
+| 🌱 Soil Analysis | Visual soil detection and classification |
+| 🌾 Crop Recognition | Crop identification and detection |
+| 🦠 Disease Detection | Identification of visible crop disease symptoms |
+| 🐛 Pest Detection | Identification of supported agricultural pests |
+| 🎮 Remote Mobility | Web-based rover movement control |
+| 🌐 Live Monitoring | Camera streaming and AI result visualization |
+
+---
+
+## ✦ 03 — THE FOUR INTELLIGENCE SYSTEMS
+
+M.O.O.N. is built around four independent AI models. Each model has its own detection purpose and can be selected through the web dashboard.
+
+<details open>
+<summary><strong>01 — SOIL DETECTION</strong></summary>
+
+### 🌱 Soil Intelligence
+
+Analyzes visible soil characteristics through camera-based AI processing.
+
+**Intended capabilities:**
+- Soil type identification.
+- Visual soil classification.
+- Soil surface observation.
+- Identification of visible soil characteristics.
+
+</details>
+
+<details open>
+<summary><strong>02 — CROP DETECTION</strong></summary>
+
+### 🌾 Crop Intelligence
+
+Identifies and detects crops within the rover's camera feed.
+
+**Intended capabilities:**
+- Crop identification.
+- Crop category recognition.
+- Crop region detection.
+- Visual crop observation.
+
+</details>
+
+<details open>
+<summary><strong>03 — CROP DISEASE DETECTION</strong></summary>
+
+### 🦠 Plant Health Intelligence
+
+Analyzes plant images to identify visible disease symptoms.
+
+**Intended capabilities:**
+- Diseased leaf detection.
+- Disease category identification.
+- Visible symptom recognition.
+- Healthy and affected plant classification.
+
+</details>
+
+<details open>
+<summary><strong>04 — PEST DETECTION</strong></summary>
+
+### 🐛 Pest Intelligence
+
+Detects and identifies supported agricultural pests in camera images.
+
+**Intended capabilities:**
+- Insect detection.
+- Pest identification.
+- Pest location detection.
+- Visual pest monitoring.
+
+</details>
+
+> **Important:** Camera-based soil detection is limited to visible characteristics. Accurate pH, moisture, NPK, and chemical measurements require dedicated sensors or laboratory testing. AI disease and pest identification is also limited to the classes represented in the respective trained models.
+
+---
+
+## ✦ 04 — SYSTEM ARCHITECTURE
+
+M.O.O.N. follows a distributed architecture where every major hardware component has a dedicated responsibility.
+
+### Hardware Architecture
+
+| Component | Responsibility |
+|:---|:---|
+| Raspberry Pi 1 (3B+) | Camera acquisition, communication and dashboard connectivity |
+| Raspberry Pi 2 (3B+) | Dedicated AI processing |
+| Arduino Uno | Low-level motor and movement control |
+| USB Webcam | Live visual input |
+| Motor Drivers | Motor direction and power control |
+| Custom Web Dashboard | User interface and system monitoring |
+
+### The Distributed Architecture
 
 ```text
-                    AGRICULTURAL FIELD
-                            |
-                            v
-                 +----------------------+
-                 |    M.O.O.N. ROVER    |
-                 |   Mobile Platform    |
-                 +----------------------+
-                      |            |
-              +-------+            +--------+
-              |                             |
-              v                             v
-      +---------------+             +---------------+
-      | Mobility and  |             | Field sensing |
-      | soil actuators|             | and camera    |
-      +---------------+             +---------------+
-              |                             |
-              +-------------+---------------+
-                            |
-                            v
-                 +----------------------+
-                 |     ARDUINO UNO      |
-                 | Motion / Actuators   |
-                 | Ultrasonic Interface |
-                 +----------------------+
-                            |
-                   Serial / Integration
-                            |
-                            v
-                 +----------------------+
-                 |   RASPBERRY PI 3B+   |
-                 | Edge-side Computing  |
-                 +----------------------+
-                            |
-                            v
-                 +----------------------+
-                 |  COMPUTER VISION /   |
-                 |       AI MODELS      |
-                 +----------------------+
-                            |
-                            v
-                 +----------------------+
-                 | APPLICATION / DATA   |
-                 | PRESENTATION LAYER   |
-                 +----------------------+
+                     ┌───────────────┐
+                     │     USER      │
+                     └───────┬───────┘
+                             │
+                             ▼
+                ┌────────────────────────┐
+                │   M.O.O.N. DASHBOARD   │
+                │  Camera / AI / Control │
+                └───────────┬────────────┘
+                            │
+                            ▼
+                ┌────────────────────────┐
+                │   RASPBERRY PI 1       │
+                │       (3B+)            │
+                │                        │
+                │  CAMERA & COMMUNICATION│
+                └───────┬─────────┬──────┘
+                        │         │
+               VIDEO    │         │ MOVEMENT
+                        ▼         ▼
+              ┌─────────────┐  ┌─────────────┐
+              │ RASPBERRY   │  │  ARDUINO    │
+              │ PI 2 (3B+)  │  │   UNO       │
+              │             │  └──────┬──────┘
+              │ AI PROCESSING│         │
+              └──────┬──────┘         ▼
+                     │           ┌────────────┐
+                     ▼           │   MOTOR    │
+              ┌─────────────┐    │  DRIVERS   │
+              │ MODEL       │    └──────┬─────┘
+              │ MANAGER     │           │
+              └──────┬──────┘           ▼
+                     │              DC MOTORS
+       ┌─────────────┼─────────────┐     │
+       │             │             │     ▼
+       ▼             ▼             ▼   ROVER
+  ┌─────────┐   ┌─────────┐   ┌─────────┐
+  │  SOIL   │   │  CROP   │   │ DISEASE │
+  │  MODEL  │   │  MODEL  │   │  MODEL  │
+  └────┬────┘   └────┬────┘   └────┬────┘
+       │             │             │
+       └─────────────┼─────────────┘
+                     │
+                ┌────▼────┐
+                │  PEST   │
+                │  MODEL  │
+                └────┬────┘
+                     │
+                     ▼
+              RESULT PROCESSING
+                     │
+                     ▼
+               WEB DASHBOARD
 ```
 
-*The diagram represents the intended high-level architecture. The exact communication protocol and complete integration between the Raspberry Pi, Arduino, sensors and application should be treated as under development unless demonstrated in the source code.*
+**Architecture principle:** All four AI models are independent and parallel model branches under the same AI model manager. The diagram illustrates their logical organization, not a mandatory execution sequence. Selected models can be scheduled for inference according to available resources.
 
-## 5. Hardware Inventory
+---
 
-The following inventory is consolidated from the repository's Arduino controller firmware, project documentation and development log.
+## ✦ 05 — AI PROCESSING ENGINE
 
-### 5.1 Main computing and control
+The second Raspberry Pi 3B+ serves as the dedicated AI processing unit.
 
-| Component | Documented specification | Function |
-|---|---|---|
-| Raspberry Pi | Raspberry Pi 3B+ | Edge-computing platform for image handling, AI experiments and application integration |
-| Microcontroller | Arduino UNO | Low-level rover movement and actuator control |
-| Motor driver | BTS7960, left and right channels defined in firmware | High-current drive interface for the rover's motor groups |
+Its primary responsibility is to receive camera frames, process them using selected AI models, and return inference results.
 
-### 5.2 Mobility and actuation
-
-| Component | Documented specification | Function |
-|---|---|---|
-| Rover chassis | Approx. 2 ft × 2 ft | Mechanical platform |
-| Drive system | Four-wheel arrangement | Field mobility |
-| DC drive motors | Four-motor arrangement documented | Propulsion |
-| Camera / sensor pan servo | Servo output on Arduino pin 4 | Camera or sensor positioning |
-| Drill actuator servos | Two MG996R 360° continuous-rotation servo channels in firmware | Drill mechanism movement |
-| NPK actuator servos | Two MG996R 360° continuous-rotation servo channels in firmware | NPK mechanism movement |
-| Drill motor | DC motor switched through a relay output | Drill operation |
-| Relay control | Arduino digital output pin 2 | Drill motor ON/OFF switching |
-
-### 5.3 Sensing and imaging
-
-| Component | Evidence in repository | Function / status |
-|---|---|---|
-| Ultrasonic distance sensor | Trigger and echo pins are defined in Arduino firmware | Distance measurement |
-| Camera | Camera acquisition is part of the project architecture and workstream | Crop / soil image capture; integration status to be validated |
-| DHT11 | Listed in the existing project hardware documentation | Temperature and relative-humidity sensing; firmware integration not established by the current controller sketch |
-| MQ-135 | Listed in the existing project hardware documentation | Air-quality / gas-response sensing; firmware integration not established by the current controller sketch |
-
-**Inventory accuracy note:** The firmware explicitly defines the BTS7960 motor-driver channels, pan servo, four actuator-servo channels, drill relay and ultrasonic sensor interface. The DHT11 and MQ-135 appear in the project's documented hardware list, but their pin assignments and operation are not present in the controller sketch reviewed for this README. Verify physical quantities, exact module variants, voltage/current ratings and wiring against the assembled rover before using this table as a procurement BOM.
-
-## 6. Embedded Control and Firmware
-
-The Arduino controller sketch is available at:
-
-- [Arduino rover controller](moon_rover/arduino/moon_rover_controller.ino)
-- [Additional locomotion demonstration sketch](Inventory/rover_locomotion_demo.ino)
-
-The current controller firmware includes the following control groups:
-
-| Function | Firmware interface |
-|---|---|
-| Forward / reverse | W / S |
-| Stop rover | X |
-| Spin left / right | A / D |
-| Drill actuator down / up / stop | 1 / 2 / 3 |
-| NPK actuator down / up / stop | 4 / 5 / 6 |
-| Drill DC motor ON / OFF | O / F |
-| Camera pan center / left / right | C / L / R |
-| Read ultrasonic distance | U |
-| Display command menu | M |
-
-The sketch uses Arduino serial communication at **9600 baud** for its command interface. The left and right motor channels are controlled using PWM outputs and direction selection. The ultrasonic distance routine measures echo duration and converts it to an approximate distance in centimetres.
-
-### Controller pin allocation
-
-| Function | Arduino pin(s) |
-|---|---|
-| Ultrasonic trigger / echo | A0 / A1 |
-| Camera pan servo | D4 |
-| Left BTS7960 RPWM / LPWM | D3 / D5 |
-| Left BTS7960 REN / LEN | D7 / D8 |
-| Right BTS7960 RPWM / LPWM | D6 / D11 |
-| Right BTS7960 REN / LEN | D10 / D12 |
-| Drill actuator servos | A2 / A3 |
-| NPK actuator servos | A4 / A5 |
-| Drill motor relay | D2 |
-
-*Pin allocation is reproduced from the current Arduino controller source. Confirm the physical wiring and driver-board terminal labels before powering the system.*
-
-## 7. Software and AI Workstreams
-
-| Area | Tools / platform | Purpose |
-|---|---|---|
-| Embedded programming | Arduino IDE, Arduino C/C++ | Motion and actuator control |
-| Edge computing | Raspberry Pi OS, Python | On-device processing and application coordination |
-| Computer vision | OpenCV | Image-processing workflows |
-| Model experimentation | Google Colab | Model training and evaluation |
-| Dataset sourcing | Kaggle datasets | Training and testing data |
-| Web application | Flask | Application and dashboard development |
-| 3D design resource | OBJ model | Mechanical / design reference |
-
-### Agricultural AI modules under development
-
-1. **Pest detection** — image-based identification of visible agricultural pests.
-2. **Crop-disease recognition** — classification of crop or leaf images for potential disease symptoms.
-3. **Soil classification** — image-based exploration of soil-category recognition.
-4. **Leaf yellow-index analysis** — image segmentation and estimation of yellow and non-yellow leaf regions.
-
-The work log records dataset collection and model training/testing using Kaggle datasets and Google Colab. Further validation is required for field accuracy, model robustness, inference speed and deployment performance on the Raspberry Pi 3B+.
-
-## 8. Mechanical Design and Prototype Development
-
-The rover's documented footprint is approximately **2 ft × 2 ft**. The development log records that Version 1 was tested and mechanical design anomalies were identified. The structure was subsequently reconsidered with the objective of improving stability.
-
-The design includes a mobile chassis and dedicated mechanisms for drill and NPK-related soil interaction. The repository also contains a 3D OBJ model for design reference.
-
-## 9. Project Media Gallery
-
-All photographs and videos below are linked from the repository's `Inventory/` directory. The gallery is arranged by the available filename timestamps to provide a chronological development record. Captions identify the media sequence rather than asserting unverified component details.
-
-### 9.1 Design and initial prototype resources
-
-<p align="center">
-  <img src="Inventory/Untitled%20Design.jpg" width="48%" alt="Rover design reference">
-  <img src="Inventory/6.jpeg" width="48%" alt="Project design photograph">
-</p>
-
-<p align="center">
-  <img src="Inventory/rover_version_1.jpg" width="48%" alt="Rover Version 1">
-  <img src="Inventory/1b2e333b-b999-4ff9-99aa-126fafdfacf6.jpg" width="48%" alt="Rover project photograph">
-</p>
-
-### 9.2 Prototype and hardware documentation — 22 November 2026
-
-<p align="center">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.33%20PM.jpeg" width="48%" alt="Prototype documentation, 8:57:33 PM">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM.jpeg" width="48%" alt="Prototype documentation, 8:57:34 PM">
-</p>
-
-<p align="center">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM%20(1).jpeg" width="48%" alt="Prototype documentation, 8:57:34 PM, additional view">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.35%20PM.jpeg" width="48%" alt="Prototype documentation, 8:57:35 PM">
-</p>
-
-<p align="center">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.35%207.jpeg" width="48%" alt="Prototype documentation, 8:57:35 PM, additional view">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM.jpeg" width="48%" alt="Prototype documentation, 8:57:36 PM">
-</p>
-
-<p align="center">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM%20(1).jpeg" width="48%" alt="Prototype documentation, 8:57:36 PM, additional view">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM%20(2).jpeg" width="48%" alt="Prototype documentation, 8:57:36 PM, additional view">
-</p>
-
-<p align="center">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM%20(3).jpeg" width="48%" alt="Prototype documentation, 8:57:36 PM, additional view">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.37%20PM.jpeg" width="48%" alt="Prototype documentation, 8:57:37 PM">
-</p>
-
-<p align="center">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%208.57.38%20PM.jpeg" width="48%" alt="Prototype documentation, 8:57:38 PM">
-  <img src="Inventory/8b293d74-b255-4940-9a00-30b70bd94920.jpg" width="48%" alt="Rover project photograph">
-</p>
-
-### 9.3 Further development and testing records
-
-<p align="center">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.05.04%20PM.jpeg" width="48%" alt="Development record, 9:05:04 PM">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.05.05%20PM.jpeg" width="48%" alt="Development record, 9:05:05 PM">
-</p>
-
-<p align="center">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.23.47%20PM.jpeg" width="48%" alt="Development record, 9:23:47 PM">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.25.14%20PM.jpeg" width="48%" alt="Development record, 9:25:14 PM">
-</p>
-
-<p align="center">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.26.21%20PM.jpeg" width="48%" alt="Development record, 9:26:21 PM">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.26.22%20PM.jpeg" width="48%" alt="Development record, 9:26:22 PM">
-</p>
-
-<p align="center">
-  <img src="Inventory/WhatsApp%20Image%202026-11-22%20at%209.26.26%20PM.jpeg" width="48%" alt="Development record, 9:26:26 PM">
-</p>
-
-### 9.4 Demonstration videos
-
-- [Prototype / rover demonstration — 8:57 PM](Inventory/WhatsApp%20Video%202026-11-22%20at%208.57.34%20PM.mp4)
-- [Rover testing / development demonstration — 9:05 PM](Inventory/WhatsApp%20Video%202026-11-22%20at%209.05.04%20PM.mp4)
-
-### 9.5 CAD, firmware and project documents
-
-- [3D rover model — `tinker.obj`](Inventory/tinker.obj)
-- [Locomotion demonstration firmware — `rover_locomotion_demo.ino`](Inventory/rover_locomotion_demo.ino)
-- [Official SIH 2026 project document](Inventory/MOON_SIH2026_Official_Template_Fitted_Final90.pdf)
-- [Inventory and work logs](Inventory/Inventory%20%26%20Work%20Logs)
-- [Main Arduino controller firmware](moon_rover/arduino/moon_rover_controller.ino)
-
-## 10. Repository Structure
+### Processing Pipeline
 
 ```text
-M.O.O.N-Field_Rover/
-├── Inventory/
-│   ├── Prototype photographs
-│   ├── Prototype demonstration videos
-│   ├── rover_locomotion_demo.ino
-│   ├── tinker.obj
-│   ├── Inventory & Work Logs
-│   └── MOON_SIH2026_Official_Template_Fitted_Final90.pdf
-├── docs & papers/
-│   └── Agritech Rover Hardware Architecture (1).pdf
-├── moon_rover/
-│   ├── arduino/
-│   │   └── moon_rover_controller.ino
-│   └── my_flask_app/
-│       └── templates/
-└── README.md
+       USB WEBCAM
+            │
+            ▼
+      CAMERA CAPTURE
+            │
+            ▼
+      RASPBERRY PI 1
+            │
+            ▼
+       FRAME TRANSFER
+            │
+            ▼
+      RASPBERRY PI 2
+            │
+            ▼
+     IMAGE PREPROCESSING
+            │
+            ▼
+       MODEL MANAGER
+            │
+     ┌──────┼──────┬──────┐
+     ▼      ▼      ▼      ▼
+    SOIL   CROP  DISEASE  PEST
+     │      │      │      │
+     └──────┴──────┴──────┘
+            │
+            ▼
+      RESULT PROCESSING
+            │
+            ▼
+       WEB DASHBOARD
 ```
 
-## 11. Development Log
+### Flexible Model Selection
 
-The repository's work log records the following contributions on **22 November 2026**.
+The operator can select:
 
-| Contributor | Recorded work |
-|---|---|
-| Ishan Samanta — Project Lead | Rover redesign and restructuring; Raspberry Pi 3B+ setup; controller-board circuit connections; Arduino motion and servo-control programming; edge-computing model research; Version 1 testing and mechanical review |
-| Shouvik Show — Project Member | Rover design and dimensional planning; AI model development for pest detection, crop-disease detection, yellow-index analysis and soil classification; Kaggle dataset collection; Google Colab training/testing; Version 1 testing and mechanical review |
+| Selection | Execution Configuration |
+|:---|:---|
+| 1 Model | Any individual model |
+| 2 Models | Any two-model combination |
+| 3 Models | Any three-model combination |
+| 4 Models | All four models |
 
-## 12. Current Status and Roadmap
+The model manager will coordinate model loading, selection, and execution.
 
-- [x] Initial four-wheel rover prototype documented.
-- [x] Raspberry Pi 3B+ and Arduino UNO selected for the computing/control architecture.
-- [x] Arduino controller firmware created for movement, actuator control, drill relay and ultrasonic distance reading.
-- [x] 3D model and prototype media added to the repository.
-- [x] Initial agricultural AI model experimentation recorded.
-- [x] Version 1 tested and mechanical improvement areas identified.
-- [ ] Complete and validate the revised mechanical structure.
-- [ ] Verify motor-driver wiring, motor ratings and power distribution.
-- [ ] Integrate and validate camera and field-sensor acquisition.
-- [ ] Establish reliable Raspberry Pi–Arduino communication.
-- [ ] Benchmark lightweight AI models on the Raspberry Pi 3B+.
-- [ ] Integrate the AI workflow with the Flask application.
-- [ ] Conduct repeatable field trials and publish measured results.
+### Model Deployment Options
 
-## 13. Engineering and Safety Considerations
+Potential supported formats and inference technologies include:
 
-| Area | Design consideration |
-|---|---|
-| Mechanical stability | Centre of gravity, chassis rigidity, wheel traction and actuator loads |
-| Motor drive | Driver current rating, motor stall current, heat dissipation and wiring gauge |
-| Power architecture | Suitable battery capacity, regulated logic supply, common reference where required and protection |
-| Servo / actuator supply | Separate supply capability appropriate to servo current demand; avoid powering high-current servos from Arduino 5 V |
-| Edge computing | Raspberry Pi memory, CPU load, model size and inference time |
-| Sensor reliability | Calibration, placement and environmental interference |
-| Field operation | Dust, moisture, vibration, cable retention and enclosure protection |
+| Technology | Application |
+|:---|:---|
+| TensorFlow Lite | Lightweight neural network inference |
+| ONNX Runtime | Cross-framework inference |
+| NCNN | Optimized neural network deployment |
+| OpenCV DNN | Supported computer vision models |
+| PyTorch | Model development and compatible deployment |
 
-**Safety note:** The firmware controls motors, servos and a relay-driven drill motor. Test with wheels raised or the mechanism unloaded where practical, provide an accessible emergency power disconnect, and verify driver, relay, battery and actuator ratings before field operation.
+The final runtime will be selected according to the frameworks used to train the models.
 
-## 14. Documentation and References
+### Optimization Strategy
 
-- [GitHub repository](https://github.com/ishansamanta/M.O.O.N-Field_Rover)
-- [Project inventory](Inventory/)
-- [Hardware architecture document](docs%20%26%20papers/Agritech%20Rover%20Hardware%20Architecture%20(1).pdf)
-- [Official SIH 2026 project document](Inventory/MOON_SIH2026_Official_Template_Fitted_Final90.pdf)
-- [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/)
-- [Arduino documentation](https://docs.arduino.cc/)
-- [OpenCV documentation](https://docs.opencv.org/)
-- [Flask documentation](https://flask.palletsprojects.com/)
+The Raspberry Pi 3B+ has limited computing and memory resources. Therefore, optimization is essential.
 
-## 15. Future Scope
+Planned techniques include:
 
-Potential extensions include improved terrain handling, calibrated environmental and soil sensing, robust soil-sampling mechanisms, optimized edge-AI inference, offline field-data storage, dashboard-based historical analysis and extended agricultural field validation.
+- INT8 quantization.
+- Lightweight model architectures.
+- Reduced input resolution.
+- Frame skipping.
+- Efficient image preprocessing.
+- Model loading and unloading.
+- Sequential inference when necessary.
+- Resource-aware execution scheduling.
 
-## 16. Project Status
+Selecting four models does not automatically mean all four can run simultaneously at real-time speed.
 
-M.O.O.N. is an active agricultural robotics development project. The repository contains prototype media, controller firmware, a 3D model, project documentation and AI experimentation records. System-level performance, sensing accuracy and field readiness will be established through further integration and testing.
+---
+
+## ✦ 06 — MECHANICAL DESIGN
+
+### Eight-Wheel Robotic Platform
+
+M.O.O.N. is planned around an eight-wheel mechanical configuration designed to support a mobile agricultural platform.
+
+**Proposed configuration:**
+
+- 8 total wheels.
+- 4 common axle assemblies.
+- 2 adjacent wheels per axle.
+- 4 motor-driven axle positions.
+- Supporting structural chassis.
+
+### Wheel Arrangement
+
+Each common axle is intended to connect two wheels positioned side by side, similar to the dual-wheel arrangement used in heavy vehicles.
+
+### Chassis Structure
+
+The proposed chassis incorporates four perpendicular straight structural rods or support members to hold the axle assemblies.
+
+The mechanical design aims to provide:
+
+- Structural stability.
+- Weight distribution.
+- Reliable axle alignment.
+- Motor mounting positions.
+- Electronic component mounting.
+- Space for batteries and computing hardware.
+
+The final mechanical dimensions, material selection, suspension arrangements, and drivetrain specifications will be determined during prototyping.
+
+---
+
+## ✦ 07 — HARDWARE SPECIFICATIONS
+
+| Hardware | Quantity | Role |
+|:---|:---:|:---|
+| Raspberry Pi 3B+ | 2 | Camera and AI processing |
+| Arduino Uno | 1 | Rover movement |
+| USB Webcam | 1 | Visual observation |
+| DC Gear Motors | 4 planned | Propulsion |
+| Wheels | 8 planned | Mobility |
+| Common Axles | 4 planned | Wheel connection |
+| Motor Drivers | As required | Motor control |
+| Chassis | 1 | Mechanical support |
+| Battery System | As required | Power supply |
+| Wiring | As required | Electrical connections |
+
+*Specifications are subject to change during hardware testing.*
+
+---
+
+## ✦ 08 — WEB DASHBOARD
+
+The M.O.O.N. web dashboard is the central interface through which the operator interacts with the rover.
+
+Rather than depending entirely on an external robotics interface, M.O.O.N. is designed around its own custom dashboard.
+
+### Dashboard Modules
+
+| Interface | Function |
+|:---|:---|
+| 📷 Live Camera | View the rover's camera feed |
+| 🎮 Rover Control | Control movement remotely |
+| 🌱 Soil Detection | View soil analysis results |
+| 🌾 Crop Detection | View crop identification |
+| 🦠 Disease Detection | View crop disease results |
+| 🐛 Pest Detection | View pest identification |
+| 🧠 AI Model Manager | Select individual or multiple models |
+| 📊 System Monitoring | Monitor device and connection status |
+
+### Dashboard Workflow
+
+```text
+       M.O.O.N. DASHBOARD
+               │
+       ┌───────┴────────┐
+       │                │
+       ▼                ▼
+   AI CONTROL       ROVER CONTROL
+       │                │
+       ▼                ▼
+  RASPBERRY PI 2    RASPBERRY PI 1
+       │                │
+       ▼                ▼
+  FOUR AI MODELS     ARDUINO UNO
+       │                │
+       ▼                ▼
+  AI RESULTS         MOTOR CONTROL
+       │                │
+       ▼                ▼
+  DASHBOARD            ROVER
+```
+
+Potential communication technologies include HTTP APIs and WebSockets, depending on the final implementation.
+
+---
+
+## ✦ 09 — LIVE OPERATING WORKFLOW
+
+The intended live operating sequence is:
+
+**01 — Initialization**
+
+The Raspberry Pi units and Arduino Uno start, and the communication system is initialized.
+
+**02 — Camera Acquisition**
+
+The USB webcam connected to Raspberry Pi 1 begins capturing live footage.
+
+**03 — Live Streaming**
+
+Raspberry Pi 1 provides the camera feed to the dashboard.
+
+**04 — AI Frame Transfer**
+
+Selected camera frames are transmitted to Raspberry Pi 2.
+
+**05 — Model Selection**
+
+The operator selects one or more of the four agricultural AI models.
+
+**06 — AI Inference**
+
+Raspberry Pi 2 processes the frames using the selected models.
+
+**07 — Result Transmission**
+
+AI inference results are returned to the web dashboard.
+
+**08 — Rover Movement**
+
+Movement commands from the dashboard are forwarded through Raspberry Pi 1 to Arduino Uno.
+
+**09 — Continuous Operation**
+
+Camera observation, AI inference, result visualization, and manual movement can operate together according to available system resources.
+
+---
+
+## ✦ 10 — SOFTWARE ECOSYSTEM
+
+The project may use the following technologies:
+
+| Technology | Purpose |
+|:---|:---|
+| Python | Raspberry Pi software and AI processing |
+| C/C++ | Arduino programming |
+| Arduino IDE | Embedded development |
+| OpenCV | Image processing |
+| TensorFlow Lite | Lightweight inference |
+| ONNX Runtime | AI model deployment |
+| NCNN | Optimized inference |
+| HTML | Dashboard structure |
+| CSS | Dashboard design |
+| JavaScript | Dashboard functionality |
+| WebSockets | Real-time communication |
+| Raspberry Pi OS | Raspberry Pi environment |
+| Git / GitHub | Version control |
+
+These are intended technology options, not a claim that every component has already been implemented.
+
+---
+
+## ✦ 11 — DEVELOPMENT ROADMAP
+
+M.O.O.N. is being developed through six major stages.
+
+### PHASE 01 — MECHANICAL ENGINEERING
+- [ ] Finalize chassis design.
+- [ ] Develop eight-wheel configuration.
+- [ ] Design four common axle assemblies.
+- [ ] Mount motors and wheels.
+- [ ] Test mechanical stability.
+
+### PHASE 02 — ELECTRONICS & MOVEMENT
+- [ ] Configure Arduino Uno.
+- [ ] Integrate motor drivers.
+- [ ] Connect DC motors.
+- [ ] Implement movement commands.
+- [ ] Test all movement directions.
+- [ ] Implement emergency stop.
+
+### PHASE 03 — CAMERA & COMPUTING
+- [ ] Configure Raspberry Pi 1.
+- [ ] Connect USB webcam.
+- [ ] Implement live camera capture.
+- [ ] Configure Raspberry Pi 2.
+- [ ] Establish Pi-to-Pi communication.
+- [ ] Implement frame transmission.
+
+### PHASE 04 — ARTIFICIAL INTELLIGENCE
+- [ ] Prepare Soil Detection Model.
+- [ ] Prepare Crop Detection Model.
+- [ ] Prepare Crop Disease Detection Model.
+- [ ] Prepare Pest Detection Model.
+- [ ] Test model compatibility.
+- [ ] Optimize model formats.
+- [ ] Develop model manager.
+- [ ] Implement multi-model selection.
+- [ ] Optimize inference performance.
+
+### PHASE 05 — DASHBOARD INTEGRATION
+- [ ] Connect dashboard to Raspberry Pi.
+- [ ] Implement live camera streaming.
+- [ ] Implement rover movement controls.
+- [ ] Develop four-model selection interface.
+- [ ] Integrate all AI results.
+- [ ] Implement system monitoring.
+
+### PHASE 06 — SYSTEM INTEGRATION
+- [ ] Integrate all hardware.
+- [ ] Test camera and AI operation.
+- [ ] Test multiple-model execution.
+- [ ] Test movement during AI processing.
+- [ ] Measure processing latency.
+- [ ] Optimize communication.
+- [ ] Perform complete rover testing.
+
+---
+
+## ✦ 12 — FUTURE DEVELOPMENT
+
+M.O.O.N. is designed to be expandable beyond its initial agricultural monitoring capabilities.
+
+### Advanced Agricultural Monitoring
+- Soil moisture sensors.
+- Soil pH measurement.
+- NPK measurement.
+- Temperature and humidity monitoring.
+- Environmental sensing.
+- Crop growth observation.
+
+### Advanced Robotics
+- Autonomous navigation.
+- Obstacle avoidance.
+- GPS integration.
+- LiDAR integration.
+- SLAM-based mapping.
+- Intelligent path planning.
+- Automated field navigation.
+
+### Advanced Artificial Intelligence
+- Weed detection.
+- Fruit detection.
+- Plant counting.
+- Crop health monitoring.
+- Disease severity estimation.
+- Pest population estimation.
+- AI-assisted agricultural recommendations.
+
+### Cloud Integration
+- Cloud-based AI inference.
+- Remote model management.
+- Historical detection records.
+- Agricultural data visualization.
+- Remote rover access.
+- Mission monitoring.
+
+*These are potential future extensions and are not represented as currently implemented features.*
+
+---
+
+## ✦ 13 — PROJECT STATUS
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Development-Planning_&_Prototyping-orange?style=for-the-badge" />
+</p>
+
+| Module | Status |
+|:---|:---|
+| System Architecture | Planning |
+| Eight-Wheel Mechanical Design | Proposed |
+| Camera Raspberry Pi | Planned |
+| AI Processing Raspberry Pi | Planned |
+| Arduino Movement Control | Planned |
+| Soil Detection | Integration Planned |
+| Crop Detection | Integration Planned |
+| Crop Disease Detection | Integration Planned |
+| Pest Detection | Integration Planned |
+| Multi-Model Execution | Planned |
+| Web Dashboard | Integration Planned |
+| Complete System | Pending |
+
+---
+
+## ✦ 14 — REPOSITORY STRUCTURE
+
+```text
+M.O.O.N/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── hardware/
+│   ├── mechanical/
+│   │   ├── chassis/
+│   │   ├── axle-design/
+│   │   └── wheel-assembly/
+│   │
+│   ├── electronics/
+│   │   ├── circuit-diagrams/
+│   │   └── wiring/
+│   │
+│   └── components.md
+│
+├── raspberry-pi/
+│   ├── camera-unit/
+│   │   ├── camera.py
+│   │   ├── streaming.py
+│   │   └── communication.py
+│   │
+│   └── ai-unit/
+│       ├── model-manager/
+│       ├── inference/
+│       ├── preprocessing/
+│       └── result-processing/
+│
+├── arduino/
+│   ├── rover-control/
+│   └── motor-control/
+│
+├── ai-models/
+│   ├── soil-detection/
+│   ├── crop-detection/
+│   ├── crop-disease-detection/
+│   └── pest-detection/
+│
+├── dashboard/
+│   ├── frontend/
+│   └── backend/
+│
+├── communication/
+│
+├── documentation/
+│   ├── architecture.md
+│   ├── setup-guide.md
+│   ├── hardware-guide.md
+│   └── development-log.md
+│
+└── assets/
+    ├── images/
+    ├── diagrams/
+    └── videos/
+```
+
+Large trained AI model files should preferably be stored using Git LFS or external model storage where appropriate.
+
+---
+
+## ✦ 15 — CONTRIBUTING
+
+M.O.O.N. welcomes contributions, ideas, technical discussions, and improvements.
+
+Potential contribution areas include:
+
+- Robotics and mechanical engineering.
+- Embedded systems.
+- Artificial intelligence.
+- Machine learning.
+- Computer vision.
+- Agricultural technology.
+- Raspberry Pi development.
+- Arduino programming.
+- Web development.
+- System architecture.
+
+### Contribution Guidelines
+
+1. Fork the repository.
+2. Create a new branch.
+3. Implement your changes.
+4. Test your modifications.
+5. Submit a pull request.
+
+All contributions should aim to improve the reliability, functionality, and scalability of M.O.O.N.
+
+---
+
+## ✦ 16 — LICENSE
+
+The licensing terms for M.O.O.N. will be specified by the project maintainers.
+
+Until a license is added to the repository, all rights are reserved by the respective copyright holder.
 
 ---
 
 <p align="center">
-  <strong>M.O.O.N. — Intelligent Agricultural Field Rover</strong><br>
-  <em>Connecting robotics, embedded systems and AI for precision agriculture.</em><br><br>
-  <strong>SMART INDIA HACKATHON 2026</strong>
+  <br>
+  <strong>🌙 M.O.O.N.</strong>
+  <br>
+  <em>Mobile Observation and Object Navigation</em>
+  <br><br>
+  <strong>ONE ROVER. FOUR AI MODELS. SMARTER AGRICULTURAL OBSERVATION.</strong>
+  <br><br>
+  <sub>Building M.O.O.N., one module at a time.</sub>
 </p>
