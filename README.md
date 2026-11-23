@@ -1,5 +1,17 @@
-# <img src="assets/images/moon-logo.png" alt="M.O.O.N. logo" width="150">
-🌙 M.O.O.N. — Mobile Observation and Object Navigation
+<table>
+  <tr>
+    <td width="160" align="center">
+      <img src="assets/images/moon-logo.png"
+           alt="M.O.O.N. Logo"
+           width="130">
+    </td>
+    <td>
+      <h1>M.O.O.N. Rover</h1>
+      <h3>Mobile Observation and Object Navigation</h3>
+      <p><em>AI-Powered Agricultural Rover</em></p>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   
