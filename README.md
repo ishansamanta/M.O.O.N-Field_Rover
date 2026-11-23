@@ -45,7 +45,7 @@
 ## 📸 Project at a glance
 
 M.O.O.N. is a student-developed agricultural rover concept that combines mobile field observation, camera-based computer vision, environmental sensing and AI/cloud processing. It is intended to collect information from multiple field locations and present useful observations through a digital dashboard.
-### Note: This project is under rigorous research and development phase and the data may change as per the requirement, so kindly refer to the inventory&worklog.txt for keeping a track of work updates. Thank you
+### Note: This project is under rigorous research and development phase and the data may change as per the requirement, so kindly refer to the Inventory & Work Log.txt for keeping a track of work updates. Thank you
 
 <p align="center">
   <div align="center">
