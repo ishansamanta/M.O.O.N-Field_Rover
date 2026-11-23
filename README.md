@@ -233,6 +233,15 @@ Additional soil sensors are an intended expansion area. The exact soil-sensor mo
 
 The circuit photograph is included as a development reference. Use the finalized, checked schematic and pin map before wiring or powering the rover.
 
+
+## 🧊 3D Model & CAD Design of the Rover
+
+<p align="center">
+  <a href="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/3d%20model%20rover.obj">
+    <b>🔗 Open or Download the 3D Rover Model (OBJ)</b>
+  </a>
+</p>
+
 ## ⚙️ Methodology / process
 
 The proposed workflow follows these stages:
