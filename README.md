@@ -54,7 +54,7 @@ M.O.O.N. is a student-developed agricultural rover concept that combines mobile 
 
 </td>
 <td align="center">
-<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/r1.jpeg" width="350">
+<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM%20(3).jpeg" width="350">
 <br>
 <b>M.O.O.N. Rover</b>
 </td>
@@ -123,7 +123,7 @@ The supplied analysis screenshots show an input leaf image, a segmented leaf mas
 ### Pest-detection examples
 
 <p align="center">
-    <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%209.26.21%20PM.jpeg"
+    <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%209.26.22%20PM.jpeg"
          width="95%">
   
   </a>
@@ -268,30 +268,47 @@ Our Team
 <br>
 
 
-<table align="center">
-  <tr>
-    <td align="center" valign="middle">
-      <a href="assets/images/prototype_demo_photo.jpg">
-        <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/1b2e333b-b999-4ff9-99aa-126fafdfacf6.jpg"
-             width="70%"
-             alt="M.O.O.N. rover demonstration">
-      </a>
-      <br><br>
-      <a href="assets/images/team_prototype_photo.jpg">
-        <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%209.26.26%20PM.jpeg"
-             width="70%"
-             alt="Team with M.O.O.N. rover">
-      </a>
-    </td>
-    <td align="center" valign="middle">
-      <a href="assets/images/team_development_work.jpg">
-        <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%208.57.37%20PM.jpeg"
-              width="200%"
-             alt="Team working on project development">
-      </a>
-    </td>
-  </tr>
+
+<h3 align="center">M.O.O.N. — Prototype & Development Gallery</h3>
+
+<table width="100%" border="0">
+<tr>
+<td width="50%" valign="top">
+
+<a href="media/rover-chassis.jpg">
+<img src="media/rover-chassis.jpg" width="100%" alt="M.O.O.N. rover chassis">
+</a>
+
+<br><br>
+
+<a href="media/rover-field-test.jpg">
+<img src="media/rover-field-test.jpg" width="100%" alt="Rover field testing">
+</a>
+
+<br><br>
+
+<a href="media/team-development.jpg">
+<img src="media/team-development.jpg" width="100%" alt="Team development work">
+</a>
+
+</td>
+
+<td width="50%" valign="top">
+
+<a href="media/team-rover.jpg">
+<img src="media/team-rover.jpg" width="100%" alt="Team with M.O.O.N. rover">
+</a>
+
+<br><br>
+
+<a href="media/electronics-testing.jpg">
+<img src="media/electronics-testing.jpg" width="100%" alt="Electronics testing and laptop">
+</a>
+
+</td>
+</tr>
 </table>
+
 
 
 ## ✅ Feasibility, viability and risks
