@@ -115,6 +115,10 @@ The supplied analysis screenshots show an input leaf image, a segmented leaf mas
 
 ### Soil-recognition examples
 
+https://github.com/user-attachments/assets/5687132a-075f-4c32-b55d-a108fbf05c9b
+
+
+
 <p align="center">
   <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%209.26.21%20PM%20(1).jpeg" height="500" width="95%">
 </p>
