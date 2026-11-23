@@ -268,7 +268,6 @@ Our Team
 </p>
 <br>
 
-<h3 align="center">M.O.O.N. — Prototype & Development Gallery</h3>
 
 <table width="100%" border="0">
 <tr>
