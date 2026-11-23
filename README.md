@@ -142,7 +142,7 @@ Version 1
 </h1>
 <br>
 </h1><p align="left">
-  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/v1.jpeg" width="75%">
+  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/v1.jpg" width="75%">
 
 </p>
 
@@ -154,12 +154,13 @@ Version 1
 - Mechanical protection, power distribution and field durability require further testing.
 <br>
 <h1 style="font-size: 32px; margin: 0; white-space: nowrap;">
-Version 2
+Current version
 </h1>
 <br>
 </h1><p align="left">
-  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/R%20version%201.jpg" height ="25%" width="75%">
+  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/v2.jpg" width="75%">
 
+</p>
 </p>
 
 ## 🧠 System architecture
@@ -177,9 +178,9 @@ flowchart TD
       PI1 -->|Frames / data| PI2[Raspberry Pi 2 - 3B+]
       PI2 --> MM[AI Model Manager]
       MM --> CH[Crop Health / Leaf Analysis]
-      MM --> PE[Pest Intelligence]
+      MM --> PE[Pest Detection]
       MM --> SO[Soil Recognition]
-      MM --> DI[Potential Disease Detection]
+      MM --> DI[ Disease Detection]
       CH --> RES[Result Processing]
       PE --> RES
       SO --> RES
@@ -255,23 +256,42 @@ Planned dashboard functions:
 
 The dashboard is a project integration target. Add screenshots of the actual interface here when the current dashboard build is ready.
 
-## 🧪 Development and team work
-
+## 🧪 M.O.O.N. Gallery
+<td  align="center" valign="middle">
+<h1 style="font-size: 8px; margin: 0; white-space: nowrap;">
+Our Team 
+</h1>
 <p align="center">
-  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM%20(1).jpeg" alt="M.O.O.N. team with the rover prototype" width="95%">
+  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM%20(1).jpeg" alt="M.O.O.N. team with the rover prototype" height "300" width="90%">
 </p>
+<br>
 
-<p align="center">
-  <img src="assets/images/team_prototype_photo.jpg" alt="Team members presenting the rover prototype" width="95%">
-</p>
 
-<p align="center">
-  <img src="assets/images/team_development_work.jpg" alt="Team working on project development" width="95%">
-</p>
+<table align="center">
+  <tr>
+    <td align="center" valign="middle">
+      <a href="assets/images/prototype_demo_photo.jpg">
+        <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/1b2e333b-b999-4ff9-99aa-126fafdfacf6.jpg"
+             width="70%"
+             alt="M.O.O.N. rover demonstration">
+      </a>
+      <br><br>
+      <a href="assets/images/team_prototype_photo.jpg">
+        <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%209.26.26%20PM.jpeg"
+             width="70%"
+             alt="Team with M.O.O.N. rover">
+      </a>
+    </td>
+    <td align="center" valign="middle">
+      <a href="assets/images/team_development_work.jpg">
+        <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%208.57.37%20PM.jpeg"
+              width="200%"
+             alt="Team working on project development">
+      </a>
+    </td>
+  </tr>
+</table>
 
-<p align="center">
-  <img src="assets/images/prototype_demo_photo.jpg" alt="Prototype demonstration and testing" width="95%">
-</p>
 
 ## ✅ Feasibility, viability and risks
 
@@ -316,10 +336,10 @@ M.O.O.N. aims to enable data-driven agricultural field monitoring by combining a
 
 ## 🛣️ Development roadmap
 
-- [x] Initial four-wheel prototype documented.
-- [x] Initial leaf-segmentation and yellow-region analysis examples documented.
-- [x] Soil-recognition output examples documented.
-- [x] Pest-detection output examples documented.
+- [✔] Initial four-wheel prototype documented.
+- [✔] Initial leaf-segmentation and yellow-region analysis examples documented.
+- [✔] Soil-recognition output examples documented.
+- [✔] Pest-detection output examples documented.
 - [ ] Finalize rover chassis and mechanical assembly.
 - [ ] Finalize motor-driver and Arduino movement integration.
 - [ ] Validate sensor wiring, calibration and readings.
