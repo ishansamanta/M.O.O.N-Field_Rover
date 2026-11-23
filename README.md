@@ -401,7 +401,7 @@ The SIH submission identifies these reference areas and documentation sources:
 
 ## 🤝 Project identity
 
-**M.O.O.N. — Mobile Observation and Object Navigation**  
+**M.O.O.N. — Mechatronics Oriented Observatory and Neural Navigation**  
 Smart India Hackathon 2026 · Team ID 177743 · Problem Statement SIH26210
 
 <p align="center">
