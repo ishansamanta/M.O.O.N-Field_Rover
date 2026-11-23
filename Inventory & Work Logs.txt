@@ -17,7 +17,7 @@ Update:
 5. Participated in testing the Field Rover Version 1 and found some design issues, helping to improve and make the structure more stable.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: Granthik Ghosh [Role: Project Member]
-Date: 22/11/2026
+Date: 23/11/2026
 Update:
 1. Worked on the design of the Field Rover and its accurate measurement for its restructuring.
 2. Worked on the setting up of the raspberry-pi3B+ and the serial communication between pi and Arduino.
@@ -26,7 +26,7 @@ Update:
 5. Participated in testing the Field Rover Version 1 and found some design issues, helping to improve and make the structure more stable.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: Paramjit Guchait [Role: Designer]
-Date: 22/11/2026
+Date: 23/11/2026
 Update:
 1. Made research on the model suitability for the AI models in Raspberry Pi 3B+.
 2. Designing on the 3D models for our required shapes and submitted some of them.
