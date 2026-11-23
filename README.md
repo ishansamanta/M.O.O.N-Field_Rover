@@ -1,17 +1,18 @@
+
 <div align="center">
 
-<table align="center" border="0">
+<table width="100%" border="0">
 <tr>
-<td align="center" valign="middle">
-<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/logo.png" width="110" alt="M.O.O.N. Logo">
+<td width="20%" align="center" valign="middle">
+<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/logo.png" width="150" alt="M.O.O.N. Logo">
 </td>
-<td  align="center" valign="middle">
-<h1 style="font-size: 32px; margin: 0; white-space: nowrap;">
-M.O.O.N. ROVER
-</h1>
-<h3 style="margin: 0;">
-Mobile Observation and Object Navigation
-</h3>
+
+<td width="80%" align="center" valign="middle">
+
+<h1>M.O.O.N. ROVER</h1>
+
+<h3>Mobile Observation and Object Navigation</h3>
+
 </td>
 </tr>
 </table>
@@ -20,24 +21,24 @@ Mobile Observation and Object Navigation
 
 </div>
 
-<p align="center">
-  
 
-<p align="center">
-  <strong>INTELLIGENT AGRICULTURAL ROVER</strong><br>
-  <em>One field scan. Four AI insights.</em>
-</p>
 
-<p align="center">
-  ![SIH 2026](https://img.shields.io/badge/Smart_India_Hackathon-2026-145DA0?style=for-the-badge)
-  ![Team](https://img.shields.io/badge/Team-M.O.O.N-5B4B8A?style=for-the-badge)
-  ![PS ID](https://img.shields.io/badge/PS_ID-SIH26210-238636?style=for-the-badge)
-  ![Category](https://img.shields.io/badge/Category-Hardware-orange?style=for-the-badge)
-</p>
+<div align="center">
 
-<p align="center">
-  **Team ID: 177743** · **Theme: Agriculture, Food Tech & Rural Development**
-</p>
+  <img src="https://img.shields.io/badge/SMART_INDIA_HACKATHON-2026-145DA0?style=for-the-badge">
+  <img src="https://img.shields.io/badge/TEAM-M.O.O.N-5B4B8A?style=for-the-badge">
+  <img src="https://img.shields.io/badge/PS_ID-SIH26210-238636?style=for-the-badge">
+  <img src="https://img.shields.io/badge/CATEGORY-HARDWARE-D97745?style=for-the-badge">
+
+  <br>
+
+  <img src="https://img.shields.io/badge/TEAM_ID-177743-2563EB?style=for-the-badge">
+
+  <br>
+
+  <img src="https://img.shields.io/badge/THEME-AGRICULTURE%2C_FOOD_TECH_%26_RURAL_DEVELOPMENT-0F766E?style=for-the-badge">
+
+</div>
 
 ---
 
