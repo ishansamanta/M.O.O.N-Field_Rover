@@ -37,7 +37,6 @@ Date: 23/11/2026
 Update:
 1. Worked on researching and comparing cloud platforms for AI model hosting and cloud storage.
 2. Worked and researched on model storage, CPU/GPU requirements and free-tier hosting limitations.
-3. Participated in testing the Field Rover Version 1 and found some design issues, helping to improve and make the structure more stable.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Name: Rishika Mandal [Role: Project Menber]  
 Date: 23/11/2026
