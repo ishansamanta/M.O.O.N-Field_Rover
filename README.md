@@ -11,7 +11,7 @@
 
 <h1>M.O.O.N. ROVER</h1>
 
-<h3>Mobile Observation and Object Navigation</h3>
+<h3>Mechatronics Oriented Observatory and Neural Navigation</h3>
 
 </td>
 </tr>
