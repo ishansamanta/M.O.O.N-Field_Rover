@@ -268,8 +268,6 @@ Our Team
 </p>
 <br>
 
-
-
 <h3 align="center">M.O.O.N. — Prototype & Development Gallery</h3>
 
 <table width="100%" border="0">
@@ -277,19 +275,19 @@ Our Team
 <td width="50%" valign="top">
 
 <a href="media/rover-chassis.jpg">
-<img src="media/rover-chassis.jpg" width="100%" alt="M.O.O.N. rover chassis">
+<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM%20(3).jpeg" width="100%" alt="M.O.O.N. rover chassis">
 </a>
 
-<br><br>
+<br>
 
 <a href="media/rover-field-test.jpg">
-<img src="media/rover-field-test.jpg" width="100%" alt="Rover field testing">
+<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/1b2e333b-b999-4ff9-99aa-126fafdfacf6.jpg" width="100%" alt="Rover field testing">
 </a>
 
-<br><br>
+<br>
 
 <a href="media/team-development.jpg">
-<img src="media/team-development.jpg" width="100%" alt="Team development work">
+<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%209.26.26%20PM.jpeg" width="100%" alt="Team development work">
 </a>
 
 </td>
@@ -297,13 +295,13 @@ Our Team
 <td width="50%" valign="top">
 
 <a href="media/team-rover.jpg">
-<img src="media/team-rover.jpg" width="100%" alt="Team with M.O.O.N. rover">
+<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%208.57.36%20PM.jpeg" width="100%" alt="Team with M.O.O.N. rover">
 </a>
 
 <br><br>
 
 <a href="media/electronics-testing.jpg">
-<img src="media/electronics-testing.jpg" width="100%" alt="Electronics testing and laptop">
+<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%208.57.37%20PM.jpeg" width="100%" alt="Electronics testing and laptop">
 </a>
 
 </td>
