@@ -214,6 +214,7 @@ The official SIH technical approach lists the following technologies and compone
 | DHT11 | Temperature and humidity sensing |
 | MQ-135 | Air-quality sensing |
 | HC-SR04 | Ultrasonic obstacle detection |
+| NPK SENSOR | Realtime N-P-K measurement from soil |
 | Four DC gear motors + motor driver | Rover movement |
 | Wi-Fi / Internet | Data communication |
 | Cloud storage | Remote data storage and synchronization |
