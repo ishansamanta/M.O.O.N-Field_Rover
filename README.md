@@ -5,7 +5,7 @@
 <td align="center" valign="middle">
 <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/logo.png" width="110" alt="M.O.O.N. Logo">
 </td>
-<td align="left" valign="middle">
+<td  align="center" valign="middle">
 <h1 style="font-size: 32px; margin: 0; white-space: nowrap;">
 M.O.O.N. ROVER
 </h1>
@@ -46,7 +46,22 @@ Mobile Observation and Object Navigation
 M.O.O.N. is a student-developed agricultural rover concept that combines mobile field observation, camera-based computer vision, environmental sensing and AI/cloud processing. It is intended to collect information from multiple field locations and present useful observations through a digital dashboard.
 
 <p align="center">
-  <img src="assets/images/prototype_field_demo.jpg" alt="M.O.O.N. working prototype demonstration" width="80%">
+  <div align="center">
+<table>
+<tr>
+<td align="center">
+<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/R%20version%201.jpg" width="350">
+<br>
+<b>M.O.O.N. Rover Version 1 </b>
+</td>
+<td align="center">
+<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/r1.jpeg" width="350">
+<br>
+<b>M.O.O.N. Rover Version 2</b>
+</td>
+</tr>
+</table>
+</div>
 </p>
 
 > **Project stage:** A working four-wheel prototype and early computer-vision experiments have been documented. The expanded distributed-AI rover architecture and integrated dashboard are development targets; they should not be mistaken for completed hardware.
@@ -91,31 +106,34 @@ The project concept organizes its AI/ML and computer-vision work into four areas
 The supplied analysis screenshots show an input leaf image, a segmented leaf mask, a highlighted yellow region and a final overlay. The displayed experiment reports pixel-area estimates and percentages. These are image-analysis measurements from the shown examples, not a universal plant-health diagnosis.
 
 <p align="center">
-  <img src="assets/images/leaf_analysis_heart_leaf.jpg" alt="Leaf segmentation and yellow-region analysis" width="95%">
+  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/yellow%20index%202.jpeg" width="95%">
 </p>
 
 <p align="center">
-  <img src="assets/images/leaf_analysis_crop_leaf.jpg" alt="Crop leaf segmentation and yellow-region analysis" width="95%">
+  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/yellow%20index.jpeg" width="95%">
 </p>
 
 ### Soil-recognition examples
 
 <p align="center">
-  <img src="assets/images/soil_detection_results.jpg" alt="Soil detection output showing red-soil and black-soil labels" width="95%">
+  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%209.26.21%20PM%20(1).jpeg" height="500" width="95%">
 </p>
 
-<p align="center">
-  <img src="assets/images/soil_detection_field_example.jpg" alt="Soil detection example in a field" width="95%">
-</p>
+
 
 ### Pest-detection examples
 
 <p align="center">
-  <img src="assets/images/pest_detection_rover_view.jpg" alt="Pest detection view with rover camera context" width="95%">
+  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%209.26.21%20PM.jpeg" width="95%">
 </p>
 
 <p align="center">
-  <img src="assets/images/pest_detection_field_1.jpg" alt="Pest detection example in crop foliage" width="95%">
+  <video src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Video%202026-11-22%20at%208.57.34%20PM.mp4"
+         width="95%"
+         controls
+         muted
+         playsinline>
+  </video>
 </p>
 
 The labels and confidence values visible in these screenshots are model outputs for the pictured examples. They should not be interpreted as validated field-wide pest counts or model accuracy metrics.
