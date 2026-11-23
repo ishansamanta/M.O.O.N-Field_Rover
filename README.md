@@ -45,14 +45,12 @@ The system is designed to allow operators to select individual models or multipl
 <table>
 <tr>
 <td align="center" width="25%">
-<h2>04</h2>
-<strong>AI Models</strong>
+<strong>Four AI Models</strong>
 <br>
 <sub>Agricultural Intelligence</sub>
 </td>
 <td align="center" width="25%">
-<h2>02</h2>
-<strong>Raspberry Pis</strong>
+<strong>Two Raspberry Pi 3B+ </strong>
 <br>
 <sub>Distributed Processing</sub>
 </td>
