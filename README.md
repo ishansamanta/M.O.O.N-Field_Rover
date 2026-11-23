@@ -238,7 +238,7 @@ The circuit photograph is included as a development reference. Use the finalized
 
 <p align="center">
   <a href="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/3d%20model%20rover.obj">
-    <b>🔗 Open or Download the 3D Rover Model (OBJ)</b>
+    <b>🔗 Download the 3D Rover Model (OBJ)</b>
   </a>
 </p>
 
