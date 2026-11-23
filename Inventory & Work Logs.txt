@@ -24,3 +24,9 @@ Update:
 3. Worked on the coding part of the motion control of the Field Rover.
 4. Done the circuit connection of the controller box .
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name: Paramjit Guchait [Role: Designer]
+Date: 22/11/2026
+Update:
+1. Made research on the model suitability for the AI models in Raspberry Pi 3B+.
+2. Designing on the 3D models for our required shapes and submitted some of them.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
