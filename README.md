@@ -115,7 +115,7 @@ The supplied analysis screenshots show an input leaf image, a segmented leaf mas
 
 ### Soil-recognition examples
 
-https://github.com/user-attachments/assets/5687132a-075f-4c32-b55d-a108fbf05c9b
+
 
 
 
@@ -128,13 +128,13 @@ https://github.com/user-attachments/assets/5687132a-075f-4c32-b55d-a108fbf05c9b
 ### Pest-detection examples
 
 <p align="center">
-  <a href="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Video%202026-11-22%20at%208.57.34%20PM.mp4">
     <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%209.26.21%20PM.jpeg"
-         alt="Click to watch pest detection video"
          width="95%">
+  
   </a>
   <br>
-  <b>▶ Watch Pest Detection Video</b>
+  <b>▶ Watch Pest Detection Video: </b>
+  https://github.com/user-attachments/assets/5687132a-075f-4c32-b55d-a108fbf05c9b
 </p>
 The labels and confidence values visible in these screenshots are model outputs for the pictured examples. They should not be interpreted as validated field-wide pest counts or model accuracy metrics.
 
