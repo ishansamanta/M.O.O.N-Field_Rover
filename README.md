@@ -47,17 +47,15 @@ M.O.O.N. is a student-developed agricultural rover concept that combines mobile 
 
 <p align="center">
   <div align="center">
-<table>
-<tr>
+
+
 <td align="center">
-<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/R%20version%201.jpg" width="350">
-<br>
-<b>M.O.O.N. Rover Version 1 </b>
+
 </td>
 <td align="center">
 <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/r1.jpeg" width="350">
 <br>
-<b>M.O.O.N. Rover Version 2</b>
+<b>M.O.O.N. Rover</b>
 </td>
 </tr>
 </table>
@@ -139,23 +137,30 @@ The labels and confidence values visible in these screenshots are model outputs 
 
 The documented prototype is a **four-wheel rover** with a platform carrying electronics, wiring and sensing components. The current prototype photographs show a developing build rather than a finished, enclosed agricultural vehicle.
 
-<p align="center">
-  <img src="assets/images/prototype_top_view.jpg" alt="M.O.O.N. prototype top view" width="75%">
+<h1 style="font-size: 32px; margin: 0; white-space: nowrap;">
+Version 1
+</h1>
+<br>
+</h1><p align="left">
+  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/v1.jpeg" width="75%">
+
 </p>
 
-<p align="center">
-  <img src="assets/images/prototype_electronics_closeup.jpg" alt="Prototype electronics and wiring" width="75%">
-</p>
-
-<p align="center">
-  <img src="assets/images/prototype_front_render.jpg" alt="Four-wheel rover platform concept" width="75%">
-</p>
 
 **Prototype direction**
 - Four-wheel drive platform using four DC gear motors and motor drivers, as described in the SIH technical proposal.
 - Chassis and motor mounting are being developed and tested.
 - Sensor and camera placement are part of the modular design.
 - Mechanical protection, power distribution and field durability require further testing.
+<br>
+<h1 style="font-size: 32px; margin: 0; white-space: nowrap;">
+Version 2
+</h1>
+<br>
+</h1><p align="left">
+  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/R%20version%201.jpg" height ="25%" width="75%">
+
+</p>
 
 ## 🧠 System architecture
 
@@ -209,18 +214,17 @@ The official SIH technical approach lists the following technologies and compone
 | Four DC gear motors + motor driver | Rover movement |
 | Wi-Fi / Internet | Data communication |
 | Cloud storage | Remote data storage and synchronization |
-| AI/ML models | Crop health, pest, soil and potential disease analysis |
+| AI/ML models | Crop health, pest, soil and disease analysis |
 
 Additional soil sensors are an intended expansion area. The exact soil-sensor model and final wiring should be confirmed against the team's circuit and bill of materials before implementation.
 
 ### Circuit and electronics planning
 
-<p align="center">
-  <img src="assets/images/electronics_circuit_diagram.jpg" alt="Hand-drawn M.O.O.N. electronics circuit and wiring plan" width="90%">
-</p>
+</h1>
+<br>
+</h1><p align="left">
+  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/pin%20connections.jpeg" width="75%">
 
-<p align="center">
-  <img src="assets/images/electronics_testing_laptop.jpg" alt="Electronics integration and testing" width="75%">
 </p>
 
 The circuit photograph is included as a development reference. Use the finalized, checked schematic and pin map before wiring or powering the rover.
@@ -254,7 +258,7 @@ The dashboard is a project integration target. Add screenshots of the actual int
 ## 🧪 Development and team work
 
 <p align="center">
-  <img src="assets/images/team_group_prototype.jpg" alt="M.O.O.N. team with the rover prototype" width="95%">
+  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%208.57.34%20PM%20(1).jpeg" alt="M.O.O.N. team with the rover prototype" width="95%">
 </p>
 
 <p align="center">
