@@ -1,8 +1,8 @@
-# 🌙 M.O.O.N. — Mobile Observation and Object Navigation
+# <img src="assets/images/moon-logo.png" alt="M.O.O.N. logo" width="150">
+</p>🌙 M.O.O.N. — Mobile Observation and Object Navigation
 
 <p align="center">
-  <img src="assets/images/moon-logo.png" alt="M.O.O.N. logo" width="150">
-</p>
+  
 
 <p align="center">
   <strong>INTELLIGENT AGRICULTURAL ROVER</strong><br>
