@@ -39,3 +39,13 @@ Update:
 2. Worked and researched on model storage, CPU/GPU requirements and free-tier hosting limitations.
 3. Participated in testing the Field Rover Version 1 and found some design issues, helping to improve and make the structure more stable.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name: Rishika Mandal [Role: Project Menber]  
+Date: 23/11/2026
+Update:
+1. Worked on developing AI/ML and Computer Vision modules for the Field Rover using Python, OpenCV, and Deep Learning techniques.
+2. Developed and worked on AI models for pest detection, crop disease detection, leaf yellow index analysis, and soil classification.
+3. Implemented an OpenCV-based Leaf Yellow Index Analysis System using HSV colour-space thresholding to identify yellow regions on plant leaves and calculate leaf yellowness percentage as an indicator of crop health.
+4. Worked with Grounding DINO, YOLOv11-Seg, and SAM 2.1 for object detection and image segmentation in agricultural applications.
+5. Developed and trained a ResNet18-based soil classification model, achieving approximately 99.38% validation accuracy across six soil classes.
+6. Worked on AI model outputs into the rover's monitoring dashboard, including pest count, leaf yellowness percentage, plant health percentage, and soil type.
+7. Participated in testing the Field Rover Version 1 and evaluated the AI and software components.
