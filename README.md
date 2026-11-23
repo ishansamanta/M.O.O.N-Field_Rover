@@ -3,7 +3,7 @@
 <table align="center" border="0">
 <tr>
 <td align="center" valign="middle">
-<img src="assets/images/moon-logo.png" width="110" alt="M.O.O.N. Logo">
+<img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/logo.png" width="110" alt="M.O.O.N. Logo">
 </td>
 <td align="left" valign="middle">
 <h1 style="font-size: 32px; margin: 0; white-space: nowrap;">
