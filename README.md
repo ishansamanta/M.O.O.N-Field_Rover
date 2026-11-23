@@ -268,7 +268,11 @@ Planned dashboard functions:
 - Sensor readings and device status.
 - Field observations and historical results.
 
-The dashboard is a project integration target. Add screenshots of the actual interface here when the current dashboard build is ready.
+<p align="center">
+  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/Screenshot%202026-11-23%20221442.png" alt="M.O.O.N. team with the rover prototype" width="100%">
+</p>
+<br>
+
 
 ## 🧪 M.O.O.N. Gallery
 <td  align="center" valign="middle">
