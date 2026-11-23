@@ -124,18 +124,14 @@ The supplied analysis screenshots show an input leaf image, a segmented leaf mas
 ### Pest-detection examples
 
 <p align="center">
-  <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%209.26.21%20PM.jpeg" width="95%">
+  <a href="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Video%202026-11-22%20at%208.57.34%20PM.mp4">
+    <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Image%202026-11-22%20at%209.26.21%20PM.jpeg"
+         alt="Click to watch pest detection video"
+         width="95%">
+  </a>
+  <br>
+  <b>▶ Watch Pest Detection Video</b>
 </p>
-
-<p align="center">
-  <video src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/WhatsApp%20Video%202026-11-22%20at%208.57.34%20PM.mp4"
-         width="95%"
-         controls
-         muted
-         playsinline>
-  </video>
-</p>
-
 The labels and confidence values visible in these screenshots are model outputs for the pictured examples. They should not be interpreted as validated field-wide pest counts or model accuracy metrics.
 
 ## 🚜 Rover prototype and mechanical development
