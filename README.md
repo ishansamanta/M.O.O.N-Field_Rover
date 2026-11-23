@@ -1,13 +1,14 @@
 
+
 <div align="center">
 
-<table width="100%" border="0">
+<table width="100%" style="border: none; border-collapse: collapse;">
 <tr>
-<td width="20%" align="center" valign="middle">
+<td width="20%" align="center" valign="middle" style="border: none;">
 <img src="https://github.com/ishansamanta/M.O.O.N-Field_Rover/blob/main/media/logo.png" width="150" alt="M.O.O.N. Logo">
 </td>
 
-<td width="80%" align="center" valign="middle">
+<td width="80%" align="center" valign="middle" style="border: none;">
 
 <h1>M.O.O.N. ROVER</h1>
 
@@ -16,6 +17,11 @@
 </td>
 </tr>
 </table>
+
+<h2>AI-POWERED AGRICULTURAL ROBOTICS</h2>
+
+</div>
+
 
 <p><b>AI-POWERED AGRICULTURAL ROBOTICS</b></p>
 
