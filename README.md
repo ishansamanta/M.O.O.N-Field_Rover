@@ -20,10 +20,6 @@
 
 <h2>AI-POWERED AGRICULTURAL ROBOTICS</h2>
 
-</div>
-
-
-<p><b>AI-POWERED AGRICULTURAL ROBOTICS</b></p>
 
 </div>
 
